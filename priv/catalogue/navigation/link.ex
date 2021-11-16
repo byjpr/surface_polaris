@@ -1,0 +1,33 @@
+defmodule SurfacePolaris.Catalogue.Link do
+  @moduledoc """
+  """
+  defmodule BasicButton do
+    use Surface.Catalogue.Example,
+      subject: SurfacePolaris.Link,
+      catalogue: SurfacePolaris.Catalogue,
+      title: "Label",
+      height: "70px",
+      container: {:div, class: "buttons"}
+
+    def render(assigns) do
+      ~F"""
+        <Link external={true} url="https://help.shopify.com/manual/orders/fulfill-orders">fulfilling orders</Link>
+      """
+    end
+  end
+
+  defmodule OutlineButton do
+    use Surface.Catalogue.Example,
+      subject: SurfacePolaris.Link,
+      catalogue: SurfacePolaris.Catalogue,
+      title: "Label",
+      height: "70px",
+      container: {:div, class: "buttons"}
+
+    def render(assigns) do
+      ~F"""
+        <Link url="https://help.shopify.com/manual/orders/fulfill-orders">fulfilling orders</Link>
+      """
+    end
+  end
+end
