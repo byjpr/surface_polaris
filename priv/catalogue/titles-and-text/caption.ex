@@ -6,7 +6,7 @@ defmodule SurfacePolaris.Catalogue.Caption do
     catalogue: SurfacePolaris.Catalogue,
     title: "Default caption",
     height: "90px",
-    container: {:div, class: "buttons"}
+    container: {:div, class: "temporary-workaround"}
 
   def render(assigns) do
     ~F"""

@@ -7,7 +7,7 @@ defmodule SurfacePolaris.Catalogue.Icon do
       catalogue: SurfacePolaris.Catalogue,
       title: "Icon",
       height: "70px",
-      container: {:div, class: "buttons"}
+      container: {:div, class: "temporary-workaround"}
 
     def render(assigns) do
       ~F"""
@@ -22,7 +22,7 @@ defmodule SurfacePolaris.Catalogue.Icon do
       catalogue: SurfacePolaris.Catalogue,
       title: "Icon with Backdrop",
       height: "70px",
-      container: {:div, class: "buttons"}
+      container: {:div, class: "temporary-workaround"}
 
     def render(assigns) do
       ~F"""
@@ -37,7 +37,7 @@ defmodule SurfacePolaris.Catalogue.Icon do
       catalogue: SurfacePolaris.Catalogue,
       title: "Icon Critical",
       height: "70px",
-      container: {:div, class: "buttons"}
+      container: {:div, class: "temporary-workaround"}
 
     def render(assigns) do
       ~F"""

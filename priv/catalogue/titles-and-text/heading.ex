@@ -8,7 +8,7 @@ defmodule SurfacePolaris.Catalogue.Heading do
       catalogue: SurfacePolaris.Catalogue,
       title: "h1",
       height: "90px",
-      container: {:div, class: "buttons"}
+      container: {:div, class: "temporary-workaround"}
 
     def render(assigns) do
       ~F"""
@@ -23,7 +23,7 @@ defmodule SurfacePolaris.Catalogue.Heading do
       catalogue: SurfacePolaris.Catalogue,
       title: "h2",
       height: "90px",
-      container: {:div, class: "buttons"}
+      container: {:div, class: "temporary-workaround"}
 
     def render(assigns) do
       ~F"""
@@ -38,7 +38,7 @@ defmodule SurfacePolaris.Catalogue.Heading do
       catalogue: SurfacePolaris.Catalogue,
       title: "H3",
       height: "90px",
-      container: {:div, class: "buttons"}
+      container: {:div, class: "temporary-workaround"}
 
     def render(assigns) do
       ~F"""
@@ -53,7 +53,7 @@ defmodule SurfacePolaris.Catalogue.Heading do
       catalogue: SurfacePolaris.Catalogue,
       title: "h4",
       height: "90px",
-      container: {:div, class: "buttons"}
+      container: {:div, class: "temporary-workaround"}
 
     def render(assigns) do
       ~F"""
@@ -68,7 +68,7 @@ defmodule SurfacePolaris.Catalogue.Heading do
       catalogue: SurfacePolaris.Catalogue,
       title: "h5",
       height: "90px",
-      container: {:div, class: "buttons"}
+      container: {:div, class: "temporary-workaround"}
 
     def render(assigns) do
       ~F"""
@@ -83,7 +83,7 @@ defmodule SurfacePolaris.Catalogue.Heading do
       catalogue: SurfacePolaris.Catalogue,
       title: "p",
       height: "90px",
-      container: {:div, class: "buttons"}
+      container: {:div, class: "temporary-workaround"}
 
     def render(assigns) do
       ~F"""

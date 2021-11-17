@@ -4,24 +4,25 @@ defmodule SurfacePolaris.Link do
   """
 
   use Surface.Component
+  alias SurfacePolaris.Icon
 
-  prop external, :boolean, default: false
-  prop id, :string, default: ""
-  prop monochrome, :boolean, default: false
-  prop remove_underline, :boolean, default: false
+  prop(external, :boolean, default: false)
+  prop(id, :string, default: "")
+  prop(monochrome, :boolean, default: false)
+  prop(remove_underline, :boolean, default: false)
 
-  prop url, :string, default: "#"
+  prop(url, :string, default: "#")
 
   @doc "Triggered on click"
-  prop click, :event
+  prop(click, :event)
 
-  slot default
+  slot(default)
 
   def render(assigns) do
     ~F"""
     <a href={"#{@url}"}
       :on-click={@click}
-      class={["Polaris-Link", "is-#{@color}": @monochrome, "is-#{@size}": @remove_underline]}>
+      class={["Polaris-Link", "is-#{@monochrome}": @monochrome, "is-#{@remove_underline}": @remove_underline]}>
 
       <#slot/>
 

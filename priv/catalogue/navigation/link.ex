@@ -7,7 +7,7 @@ defmodule SurfacePolaris.Catalogue.Link do
       catalogue: SurfacePolaris.Catalogue,
       title: "Label",
       height: "70px",
-      container: {:div, class: "buttons"}
+      container: {:div, class: "temporary-workaround"}
 
     def render(assigns) do
       ~F"""
@@ -22,7 +22,7 @@ defmodule SurfacePolaris.Catalogue.Link do
       catalogue: SurfacePolaris.Catalogue,
       title: "Label",
       height: "70px",
-      container: {:div, class: "buttons"}
+      container: {:div, class: "temporary-workaround"}
 
     def render(assigns) do
       ~F"""

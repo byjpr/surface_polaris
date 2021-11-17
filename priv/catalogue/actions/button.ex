@@ -7,7 +7,7 @@ defmodule SurfacePolaris.Catalogue.Button do
       catalogue: SurfacePolaris.Catalogue,
       title: "Basic button",
       height: "90px",
-      container: {:div, class: "buttons"}
+      container: {:div, class: "temporary-workaround"}
 
     def render(assigns) do
       ~F"""
@@ -22,7 +22,7 @@ defmodule SurfacePolaris.Catalogue.Button do
       catalogue: SurfacePolaris.Catalogue,
       title: "Outline button",
       height: "90px",
-      container: {:div, class: "buttons"}
+      container: {:div, class: "temporary-workaround"}
 
     def render(assigns) do
       ~F"""
@@ -37,7 +37,7 @@ defmodule SurfacePolaris.Catalogue.Button do
       catalogue: SurfacePolaris.Catalogue,
       title: "Plain button",
       height: "90px",
-      container: {:div, class: "buttons"}
+      container: {:div, class: "temporary-workaround"}
 
     def render(assigns) do
       ~F"""
@@ -52,7 +52,7 @@ defmodule SurfacePolaris.Catalogue.Button do
       catalogue: SurfacePolaris.Catalogue,
       title: "Primary button",
       height: "90px",
-      container: {:div, class: "buttons"}
+      container: {:div, class: "temporary-workaround"}
 
     def render(assigns) do
       ~F"""

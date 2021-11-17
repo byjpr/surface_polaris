@@ -6,7 +6,7 @@ defmodule SurfacePolaris.Catalogue.DisplayText do
     catalogue: SurfacePolaris.Catalogue,
     title: "Extra large",
     height: "90px",
-    container: {:div, class: "buttons"}
+    container: {:div, class: "temporary-workaround"}
 
   def render(assigns) do
     ~F"""

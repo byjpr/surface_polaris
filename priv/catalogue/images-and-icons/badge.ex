@@ -8,7 +8,7 @@ defmodule SurfacePolaris.Catalogue.Badge do
       catalogue: SurfacePolaris.Catalogue,
       title: "Default badge",
       height: "70px",
-      container: {:div, class: "buttons"}
+      container: {:div, class: "temporary-workaround"}
 
     def render(assigns) do
       ~F"""
@@ -23,7 +23,7 @@ defmodule SurfacePolaris.Catalogue.Badge do
       catalogue: SurfacePolaris.Catalogue,
       title: "Informational badge",
       height: "70px",
-      container: {:div, class: "buttons"}
+      container: {:div, class: "temporary-workaround"}
 
     def render(assigns) do
       ~F"""
@@ -38,7 +38,7 @@ defmodule SurfacePolaris.Catalogue.Badge do
       catalogue: SurfacePolaris.Catalogue,
       title: "Success badge",
       height: "70px",
-      container: {:div, class: "buttons"}
+      container: {:div, class: "temporary-workaround"}
 
     def render(assigns) do
       ~F"""
@@ -53,7 +53,7 @@ defmodule SurfacePolaris.Catalogue.Badge do
       catalogue: SurfacePolaris.Catalogue,
       title: "Attention badge",
       height: "70px",
-      container: {:div, class: "buttons"}
+      container: {:div, class: "temporary-workaround"}
 
     def render(assigns) do
       ~F"""
@@ -61,5 +61,4 @@ defmodule SurfacePolaris.Catalogue.Badge do
       """
     end
   end
-
 end
