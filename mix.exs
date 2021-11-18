@@ -15,7 +15,15 @@ defmodule SurfacePolaris.MixProject do
       compilers: [:phoenix] ++ Mix.compilers(),
       deps: deps(),
       aliases: aliases(),
-      package: package()
+      package: package(),
+      docs: [
+        groups_for_modules: [
+          "Titles and text": [~r/SurfacePolaris.(Caption|DisplayText|Heading).*/],
+          Navigation: [~r/SurfacePolaris.(FooterHelp|Link).*/],
+          "Images and icons": [~r/SurfacePolaris.(Badge|Icon).*/],
+          "Feedback indicators": [~r/SurfacePolaris.Spinner*/]
+        ]
+      ]
     ]
   end
 
@@ -27,7 +35,7 @@ defmodule SurfacePolaris.MixProject do
 
   def catalogues do
     [
-      "priv/catalogue"
+      "lib/catalogue"
     ]
   end
 

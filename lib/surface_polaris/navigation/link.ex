@@ -1,6 +1,6 @@
 defmodule SurfacePolaris.Link do
   @moduledoc """
-  `<hX>` elements of subtitle type
+  Links take users to another place, and usually appear within or directly following a sentence.
   """
 
   use Surface.Component

@@ -1,17 +1,17 @@
 defmodule SurfacePolaris.DisplayText do
   @moduledoc """
-  `<hX>` elements of subtitle type
+  Display styles make a bold visual statement. Use them to create impact when the main goal is visual storytelling. For example, use display text to convince or reassure merchants such as in marketing content or to capture attention during onboarding.
   """
 
   use Surface.Component
 
   @doc "Size of the subtitle"
-  prop element, :string, default: "p", values: ["h1", "h2", "h3", "h4", "h5", "h6", "p"]
+  prop(element, :string, default: "p", values: ["h1", "h2", "h3", "h4", "h5", "h6", "p"])
 
   @doc "Size of the subtitle"
-  prop size, :string, default: "medium", values: ["small", "medium", "large", "extraLarge"]
+  prop(size, :string, default: "medium", values: ["small", "medium", "large", "extraLarge"])
 
-  slot default
+  slot(default)
 
   def render(assigns) do
     ~F"""

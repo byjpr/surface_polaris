@@ -1,12 +1,12 @@
 defmodule SurfacePolaris.FooterHelp do
   @moduledoc """
-  `<hX>` elements of subtitle type
+  Footer help is used to refer merchants to more information related to the product or feature they’re using.
   """
 
   use Surface.Component
   alias SurfacePolaris.Icon
 
-  slot default
+  slot(default)
 
   def render(assigns) do
     ~F"""

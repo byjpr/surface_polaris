@@ -1,14 +1,14 @@
 defmodule SurfacePolaris.TextContainer do
   @moduledoc """
-  `<hX>` elements of subtitle type
+  A text container is used to wrap text elements such as paragraphs, headings, and lists to give them vertical spacing.
   """
 
   use Surface.Component
 
   @doc "Size of the subtitle"
-  prop spacing, :string, values: ["tight", "loose"]
+  prop(spacing, :string, values: ["tight", "loose"])
 
-  slot default
+  slot(default)
 
   def render(assigns) do
     ~F"""

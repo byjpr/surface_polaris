@@ -1,14 +1,14 @@
 defmodule SurfacePolaris.Subheading do
   @moduledoc """
-  `<hX>` elements of subtitle type
+  Subheadings are used for the title of any sub-sections in top-level page sections.
   """
 
   use Surface.Component
 
   @doc "Size of the subtitle"
-  prop element, :string, default: "p", values: ["h1", "h2", "h3", "h4", "h5", "h6", "p"]
+  prop(element, :string, default: "p", values: ["h1", "h2", "h3", "h4", "h5", "h6", "p"])
 
-  slot default
+  slot(default)
 
   def render(assigns) do
     ~F"""

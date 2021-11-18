@@ -6,7 +6,7 @@ defmodule SurfacePolaris.Catalogue.FooterHelp do
       subject: SurfacePolaris.FooterHelp,
       catalogue: SurfacePolaris.Catalogue,
       title: "Label",
-      height: "70px",
+      height: "140px",
       container: {:div, class: "temporary-workaround"}
 
     alias SurfacePolaris.Link

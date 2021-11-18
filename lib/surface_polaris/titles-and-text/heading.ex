@@ -1,14 +1,14 @@
 defmodule SurfacePolaris.Heading do
   @moduledoc """
-  `<hX>` elements of subtitle type
+  Headings are used as the titles of each major section of a page in the interface. For example, card components generally use headings as their title.
   """
 
   use Surface.Component
 
   @doc "Size of the subtitle"
-  prop element, :string, default: "p", values: ["h1", "h2", "h3", "h4", "h5", "h6", "p"]
+  prop(element, :string, default: "p", values: ["h1", "h2", "h3", "h4", "h5", "h6", "p"])
 
-  slot default
+  slot(default)
 
   def render(assigns) do
     ~F"""

@@ -1,17 +1,17 @@
 defmodule SurfacePolaris.Icon do
   @moduledoc """
-  A component that displays an icon compatible with Polaris icons
+  Icons are used to visually communicate core parts of the product and available actions. They can act as wayfinding tools to help merchants more easily understand where they are in the product, and common interaction patterns that are available.
   """
 
   use Surface.Component
 
   @doc "Show a backdrop behind the icon."
-  prop backdrop, :boolean, default: false
+  prop(backdrop, :boolean, default: false)
 
   use SurfacePolaris.ColorProp
 
   @doc "The SVG contents to display in the icon (icons should fit in a 20 × 20 pixel viewBox)."
-  prop source, :string, default: "ImageMajor"
+  prop(source, :string, default: "ImageMajor")
 
   def render(assigns) do
     ~F"""
