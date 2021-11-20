@@ -3,7 +3,7 @@ defmodule SurfacePolaris.Catalogue.KeyboardKey do
   """
   defmodule Default do
     use Surface.Catalogue.Example,
-      subject: SurfacePolaris.KeyboardKey,
+      subject: SurfacePolaris.ImagesIcons.KeyboardKey,
       catalogue: SurfacePolaris.Catalogue,
       title: "KeyboardKey",
       height: "70px",

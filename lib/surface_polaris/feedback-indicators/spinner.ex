@@ -1,6 +1,9 @@
-defmodule SurfacePolaris.Spinner do
+defmodule SurfacePolaris.Feedback.Spinner do
   @moduledoc """
-  Spinners are used to notify merchants that their action is being processed. For loading states, spinners should only be used for content that can’t be represented with skeleton loading components, like for data charts.
+  Spinners are used to notify merchants that their
+  action is being processed. For loading states,
+  spinners should only be used for content that can’t
+  be represented with skeleton loading components, like for data charts.
   """
 
   use Surface.Component

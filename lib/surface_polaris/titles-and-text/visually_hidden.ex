@@ -1,6 +1,7 @@
-defmodule SurfacePolaris.VisuallyHidden do
+defmodule SurfacePolaris.TitlesText.VisuallyHidden do
   @moduledoc """
-  Use when an element needs to be available to assistive technology (for example, a screen reader) but otherwise hidden.
+  Use when an element needs to be available to assistive
+  technology (for example, a screen reader) but otherwise hidden.
   """
 
   use Surface.Component

@@ -3,13 +3,13 @@ defmodule SurfacePolaris.Catalogue.FooterHelp do
   """
   defmodule BasicButton do
     use Surface.Catalogue.Example,
-      subject: SurfacePolaris.FooterHelp,
+      subject: SurfacePolaris.Navigation.FooterHelp,
       catalogue: SurfacePolaris.Catalogue,
       title: "Label",
       height: "140px",
       container: {:div, class: "temporary-workaround"}
 
-    alias SurfacePolaris.Link
+    alias SurfacePolaris.Navigation.Link
 
     def render(assigns) do
       ~F"""

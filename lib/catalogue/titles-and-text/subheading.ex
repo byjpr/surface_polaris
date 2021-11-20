@@ -4,7 +4,7 @@ defmodule SurfacePolaris.Catalogue.Subheading do
 
   defmodule H1 do
     use Surface.Catalogue.Example,
-      subject: SurfacePolaris.Subheading,
+      subject: SurfacePolaris.TitlesText.Subheading,
       catalogue: SurfacePolaris.Catalogue,
       title: "h1",
       height: "90px",
@@ -19,7 +19,7 @@ defmodule SurfacePolaris.Catalogue.Subheading do
 
   defmodule H2 do
     use Surface.Catalogue.Example,
-      subject: SurfacePolaris.Subheading,
+      subject: SurfacePolaris.TitlesText.Subheading,
       catalogue: SurfacePolaris.Catalogue,
       title: "h2",
       height: "90px",
@@ -34,7 +34,7 @@ defmodule SurfacePolaris.Catalogue.Subheading do
 
   defmodule H3 do
     use Surface.Catalogue.Example,
-      subject: SurfacePolaris.Subheading,
+      subject: SurfacePolaris.TitlesText.Subheading,
       catalogue: SurfacePolaris.Catalogue,
       title: "H3",
       height: "90px",
@@ -49,7 +49,7 @@ defmodule SurfacePolaris.Catalogue.Subheading do
 
   defmodule H4 do
     use Surface.Catalogue.Example,
-      subject: SurfacePolaris.Subheading,
+      subject: SurfacePolaris.TitlesText.Subheading,
       catalogue: SurfacePolaris.Catalogue,
       title: "h4",
       height: "90px",
@@ -64,7 +64,7 @@ defmodule SurfacePolaris.Catalogue.Subheading do
 
   defmodule H5 do
     use Surface.Catalogue.Example,
-      subject: SurfacePolaris.Subheading,
+      subject: SurfacePolaris.TitlesText.Subheading,
       catalogue: SurfacePolaris.Catalogue,
       title: "h5",
       height: "90px",
@@ -79,7 +79,7 @@ defmodule SurfacePolaris.Catalogue.Subheading do
 
   defmodule P do
     use Surface.Catalogue.Example,
-      subject: SurfacePolaris.Subheading,
+      subject: SurfacePolaris.TitlesText.Subheading,
       catalogue: SurfacePolaris.Catalogue,
       title: "p",
       height: "90px",

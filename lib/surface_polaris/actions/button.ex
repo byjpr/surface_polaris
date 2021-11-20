@@ -1,10 +1,13 @@
-defmodule SurfacePolaris.Button do
+defmodule SurfacePolaris.Actions.Button do
   @moduledoc """
-  Buttons are used primarily for actions, such as “Add”, “Close”, “Cancel”, or “Save”. Plain buttons, which look similar to links, are used for less important or less commonly used actions, such as “view shipping settings”.
+  Buttons are used primarily for actions,
+  such as “Add”, “Close”, “Cancel”, or “Save”.
+  Plain buttons, which look similar to links, are used
+  for less important or less commonly used actions, such as “view shipping settings”.
   """
 
   use Surface.Component
-  alias SurfacePolaris.Spinner
+  alias SurfacePolaris.Feedback.Spinner
 
   @module_name "Polaris-Button"
 

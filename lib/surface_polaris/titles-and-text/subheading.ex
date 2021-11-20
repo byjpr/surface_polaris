@@ -1,6 +1,7 @@
-defmodule SurfacePolaris.Subheading do
+defmodule SurfacePolaris.TitlesText.Subheading do
   @moduledoc """
-  Subheadings are used for the title of any sub-sections in top-level page sections.
+  Subheadings are used for the title of any sub-sections
+  in top-level page sections.
   """
 
   use Surface.Component

@@ -1,10 +1,11 @@
-defmodule SurfacePolaris.Link do
+defmodule SurfacePolaris.Navigation.Link do
   @moduledoc """
-  Links take users to another place, and usually appear within or directly following a sentence.
+  Links take users to another place, and usually
+  appear within or directly following a sentence.
   """
 
   use Surface.Component
-  alias SurfacePolaris.Icon
+  alias SurfacePolaris.ImagesIcons.Icon
 
   prop(external, :boolean, default: false)
   prop(id, :string, default: "")

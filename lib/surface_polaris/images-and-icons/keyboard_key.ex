@@ -1,4 +1,4 @@
-defmodule SurfacePolaris.KeyboardKey do
+defmodule SurfacePolaris.ImagesIcons.KeyboardKey do
   @moduledoc """
   Keyboard key is used to educate merchants about keyboard shortcuts.
   """

@@ -1,6 +1,9 @@
-defmodule SurfacePolaris.DisplayText do
+defmodule SurfacePolaris.TitlesText.DisplayText do
   @moduledoc """
-  Display styles make a bold visual statement. Use them to create impact when the main goal is visual storytelling. For example, use display text to convince or reassure merchants such as in marketing content or to capture attention during onboarding.
+  Display styles make a bold visual statement.
+  Use them to create impact when the main goal is visual storytelling.
+  For example, use display text to convince or reassure merchants
+  such as in marketing content or to capture attention during onboarding.
   """
 
   use Surface.Component
