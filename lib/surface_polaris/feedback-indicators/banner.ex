@@ -7,6 +7,9 @@ defmodule SurfacePolaris.Feedback.Banner do
 
   use Surface.Component
 
+  alias SurfacePolaris.Actions.ButtonGroup
+  alias SurfacePolaris.Feedback.Banner
+
   @module_name "Polaris-Banner"
 
   @doc "Set the color of the badge for the given status."
@@ -19,6 +22,9 @@ defmodule SurfacePolaris.Feedback.Banner do
   )
 
   prop(withinContent, :boolean, default: false)
+
+  prop(action, :keyword)
+  prop(secondaryAction, :keyword)
 
   slot(default)
 
@@ -36,17 +42,30 @@ defmodule SurfacePolaris.Feedback.Banner do
       "Polaris-Banner--withinContentContainer": @withinContent,
       "Polaris-Banner--withinPage": !@withinContent,
     ]}>
-      <SurfacePolaris.Feedback.Banner.Dismiss />
-      <SurfacePolaris.Feedback.Banner.Ribbon />
+      <Banner.Dismiss />
+      <Banner.Ribbon />
 
-      <SurfacePolaris.Feedback.Banner.ContentWrapper>
-        <SurfacePolaris.Feedback.Banner.Heading>
+      <Banner.ContentWrapper>
+        <Banner.Heading>
           <SurfacePolaris.TitlesText.Heading>{@title}</SurfacePolaris.TitlesText.Heading>
-        </SurfacePolaris.Feedback.Banner.Heading>
-        <SurfacePolaris.Feedback.Banner.Content>
+        </Banner.Heading>
+        <Banner.Content>
           <#slot/>
-        </SurfacePolaris.Feedback.Banner.Content>
-      </SurfacePolaris.Feedback.Banner.ContentWrapper>
+
+          <div class={"Polaris-Banner__Actions"} :if={@action || @secondaryAction}>
+            <ButtonGroup>
+              <ButtonGroup.Item :if={@action}>
+                <div class={"Polaris-Banner__PrimaryAction"}>
+                  <Banner.ActionFrom action={@action} />
+                </div>
+              </ButtonGroup.Item>
+              <ButtonGroup.Item :if={@secondaryAction}>
+                <Banner.ActionFrom action={@secondaryAction} secondary/>
+              </ButtonGroup.Item>
+            </ButtonGroup>
+          </div>
+        </Banner.Content>
+      </Banner.ContentWrapper>
     </div>
     """
   end
