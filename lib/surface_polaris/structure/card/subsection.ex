@@ -11,8 +11,8 @@ defmodule SurfacePolaris.Structure.Card.Subsection do
   @spec render(any) :: Phoenix.LiveView.Rendered.t()
   def render(assigns) do
     ~F"""
-    <div class={"Polaris-Card__Subsection"}>
-      <#slot/>
+    <div class="Polaris-Card__Subsection">
+      <#slot />
     </div>
     """
   end

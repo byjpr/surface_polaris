@@ -15,15 +15,15 @@ defmodule SurfacePolaris.Structure.Card do
 
   def render(assigns) do
     ~F"""
-    <div class={"Polaris-Card"}>
+    <div class="Polaris-Card">
       <SurfacePolaris.Structure.Card.Header :if={@title} title={@title} />
 
       <!-- Default slot -->
       <SurfacePolaris.Structure.Card.Section :if={@sectioned}>
-        <#slot/>
+        <#slot />
       </SurfacePolaris.Structure.Card.Section>
 
-        <!-- Non sectioned slot -->
+      <!-- Non sectioned slot -->
       <#slot :if={!@sectioned} />
     </div>
     """

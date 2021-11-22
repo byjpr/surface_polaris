@@ -8,7 +8,7 @@ defmodule SurfacePolaris.Structure.Card.Header do
 
   def render(assigns) do
     ~F"""
-    <div class={"Polaris-Card__Header"}>
+    <div class="Polaris-Card__Header">
       <SurfacePolaris.TitlesText.Heading element="h2">
         {@title}
       </SurfacePolaris.TitlesText.Heading>
