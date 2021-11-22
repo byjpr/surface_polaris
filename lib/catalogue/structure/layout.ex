@@ -7,7 +7,7 @@ defmodule SurfacePolaris.Catalogue.Layout do
       subject: SurfacePolaris.Structure.Layout,
       catalogue: SurfacePolaris.Catalogue,
       title: "One-column layout",
-      height: "190px",
+      height: "140px",
       container: {:div, class: "temporary-workaround"},
       direction: "vertical"
 
@@ -31,7 +31,7 @@ defmodule SurfacePolaris.Catalogue.Layout do
       subject: SurfacePolaris.Structure.Layout,
       catalogue: SurfacePolaris.Catalogue,
       title: "Two columns with primary and secondary widths",
-      height: "190px",
+      height: "140px",
       container: {:div, class: "temporary-workaround"},
       direction: "vertical"
 
@@ -60,7 +60,7 @@ defmodule SurfacePolaris.Catalogue.Layout do
       subject: SurfacePolaris.Structure.Layout,
       catalogue: SurfacePolaris.Catalogue,
       title: "Two columns with equal width",
-      height: "270px",
+      height: "220px",
       container: {:div, class: "temporary-workaround"},
       direction: "vertical"
 
@@ -100,7 +100,7 @@ defmodule SurfacePolaris.Catalogue.Layout do
       subject: SurfacePolaris.Structure.Layout,
       catalogue: SurfacePolaris.Catalogue,
       title: "Three columns with equal width",
-      height: "270px",
+      height: "220px",
       container: {:div, class: "temporary-workaround"},
       direction: "vertical"
 
@@ -140,6 +140,35 @@ defmodule SurfacePolaris.Catalogue.Layout do
             </Card.Section>
           </Card>
         </Layout.Section>
+      </Layout>
+      """
+    end
+  end
+
+  defmodule AnnotatedLayout do
+    use Surface.Catalogue.Example,
+      subject: SurfacePolaris.Structure.Layout,
+      catalogue: SurfacePolaris.Catalogue,
+      title: "Annotated layout",
+      height: "190px",
+      container: {:div, class: "temporary-workaround"},
+      direction: "vertical"
+
+    alias SurfacePolaris.Structure.Card
+    alias SurfacePolaris.TitlesText.TextStyle
+
+    def render(assigns) do
+      ~F"""
+      <Layout>
+        <Layout.AnnotatedSection
+          id="storeDetails"
+          title="Store details"
+          description="Shopify and your customers will use this information to contact you."
+        >
+          <Card sectioned>
+            <TextStyle variation="subdued">1931 units available</TextStyle>
+          </Card>
+        </Layout.AnnotatedSection>
       </Layout>
       """
     end
