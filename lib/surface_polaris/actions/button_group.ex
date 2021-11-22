@@ -17,7 +17,7 @@ defmodule SurfacePolaris.Actions.ButtonGroup do
       "Polaris-ButtonGroup--segmented": @segmented,
       "Polaris-ButtonGroup--extraTight": @spacing == "extraTight",
       "Polaris-ButtonGroup--tight": @spacing == "tight",
-      "Polaris-ButtonGroup--loose": @spacing == "loose",
+      "Polaris-ButtonGroup--loose": @spacing == "loose"
     ]}>
       <#slot />
     </div>

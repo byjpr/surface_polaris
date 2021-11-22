@@ -17,7 +17,7 @@ defmodule SurfacePolaris.TitlesText.TextStyle do
   def render(assigns) do
     ~F"""
     <div class={"Polaris-TextStyle--variation#{SPString.upcase_first(@variation)}"}>
-      <#slot/>
+      <#slot />
     </div>
     """
   end

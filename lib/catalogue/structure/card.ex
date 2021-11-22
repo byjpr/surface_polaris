@@ -86,16 +86,16 @@ defmodule SurfacePolaris.Catalogue.Card do
         <Card.Section title="Addresses">
           <Card.Subsection>
             123 First St
-            <br />
+            <br>
             Somewhere
-            <br />
+            <br>
             The Universe
           </Card.Subsection>
           <Card.Subsection>
             123 Second St
-            <br />
+            <br>
             Somewhere
-            <br />
+            <br>
             The Universe
           </Card.Subsection>
         </Card.Section>

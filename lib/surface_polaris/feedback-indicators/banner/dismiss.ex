@@ -9,7 +9,7 @@ defmodule SurfacePolaris.Feedback.Banner.Dismiss do
     ~F"""
     <div class={["Polaris-Banner__Dismiss"]}>
       <SurfacePolaris.Actions.Button plain>
-        <SurfacePolaris.ImagesIcons.Icon source={"CancelSmallMinor"} />
+        <SurfacePolaris.ImagesIcons.Icon source="CancelSmallMinor" />
       </SurfacePolaris.Actions.Button>
     </div>
     """

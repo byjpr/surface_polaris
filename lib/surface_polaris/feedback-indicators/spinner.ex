@@ -41,13 +41,11 @@ defmodule SurfacePolaris.Feedback.Spinner do
 
   def render(assigns) do
     ~F"""
-      <span
-        class={
-          ["Polaris-Spinner"] ++ ["Polaris-Spinner--sizeSmall": @size == "small", "Polaris-Spinner--sizeLarge": @size == "large"]
-        }>
-        <Large :if={@size == "large"} />
-        <Small :if={@size == "small"} />
-      </span>
+    <span class={["Polaris-Spinner"] ++
+      ["Polaris-Spinner--sizeSmall": @size == "small", "Polaris-Spinner--sizeLarge": @size == "large"]}>
+      <Large :if={@size == "large"} />
+      <Small :if={@size == "small"} />
+    </span>
     """
   end
 end

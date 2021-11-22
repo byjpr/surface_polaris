@@ -7,7 +7,7 @@ defmodule SurfacePolaris.Feedback.Banner.ContentWrapper do
 
   def render(assigns) do
     ~F"""
-    <div class={["Polaris-Banner__ContentWrapper"]}><#slot/></div>
+    <div class={["Polaris-Banner__ContentWrapper"]}><#slot /></div>
     """
   end
 end

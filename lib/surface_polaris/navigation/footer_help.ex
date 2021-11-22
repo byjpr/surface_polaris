@@ -11,16 +11,16 @@ defmodule SurfacePolaris.Navigation.FooterHelp do
 
   def render(assigns) do
     ~F"""
-      <div class="Polaris-FooterHelp">
-        <div class="Polaris-FooterHelp__Content">
-          <div class="Polaris-FooterHelp__Icon">
-            <Icon source="InfoMinor"></Icon>
-          </div>
-          <div class="Polaris-FooterHelp__Text">
-            <#slot/>
-          </div>
+    <div class="Polaris-FooterHelp">
+      <div class="Polaris-FooterHelp__Content">
+        <div class="Polaris-FooterHelp__Icon">
+          <Icon source="InfoMinor" />
+        </div>
+        <div class="Polaris-FooterHelp__Text">
+          <#slot />
         </div>
       </div>
+    </div>
     """
   end
 end

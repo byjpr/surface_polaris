@@ -32,16 +32,15 @@ defmodule SurfacePolaris.Feedback.Banner do
 
   def render(assigns) do
     ~F"""
-    <div
-    class={
-      ["Polaris-Banner", "Polaris-Banner--hasDismiss"] ++ [
-      "#{css_variation_name("status", "success")}": @status == "success",
-      "#{css_variation_name("status", "info")}": @status == "info",
-      "#{css_variation_name("status", "critical")}": @status == "critical",
-      "#{css_variation_name("status", "warning")}": @status == "warning",
-      "Polaris-Banner--withinContentContainer": @withinContent,
-      "Polaris-Banner--withinPage": !@withinContent,
-    ]}>
+    <div class={["Polaris-Banner", "Polaris-Banner--hasDismiss"] ++
+      [
+        "#{css_variation_name("status", "success")}": @status == "success",
+        "#{css_variation_name("status", "info")}": @status == "info",
+        "#{css_variation_name("status", "critical")}": @status == "critical",
+        "#{css_variation_name("status", "warning")}": @status == "warning",
+        "Polaris-Banner--withinContentContainer": @withinContent,
+        "Polaris-Banner--withinPage": !@withinContent
+      ]}>
       <Banner.Dismiss />
       <Banner.Ribbon />
 
@@ -50,17 +49,17 @@ defmodule SurfacePolaris.Feedback.Banner do
           <SurfacePolaris.TitlesText.Heading>{@title}</SurfacePolaris.TitlesText.Heading>
         </Banner.Heading>
         <Banner.Content>
-          <#slot/>
+          <#slot />
 
-          <div class={"Polaris-Banner__Actions"} :if={@action || @secondaryAction}>
+          <div class="Polaris-Banner__Actions" :if={@action || @secondaryAction}>
             <ButtonGroup>
               <ButtonGroup.Item :if={@action}>
-                <div class={"Polaris-Banner__PrimaryAction"}>
+                <div class="Polaris-Banner__PrimaryAction">
                   <Banner.ActionFrom action={@action} />
                 </div>
               </ButtonGroup.Item>
               <ButtonGroup.Item :if={@secondaryAction}>
-                <Banner.ActionFrom action={@secondaryAction} secondary/>
+                <Banner.ActionFrom action={@secondaryAction} secondary />
               </ButtonGroup.Item>
             </ButtonGroup>
           </div>

@@ -7,7 +7,7 @@ defmodule SurfacePolaris.Feedback.Banner.Heading do
 
   def render(assigns) do
     ~F"""
-    <div class={["Polaris-Banner__Heading"]}><#slot/></div>
+    <div class={["Polaris-Banner__Heading"]}><#slot /></div>
     """
   end
 end

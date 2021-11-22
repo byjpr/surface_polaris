@@ -14,7 +14,7 @@ defmodule SurfacePolaris.TitlesText.TextContainer do
   def render(assigns) do
     ~F"""
     <div class="Polaris-TextContainer">
-      <#slot/>
+      <#slot />
     </div>
     """
   end

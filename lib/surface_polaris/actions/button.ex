@@ -89,13 +89,14 @@ defmodule SurfacePolaris.Actions.Button do
 
   def render(assigns) do
     ~F"""
-      <button
-        type={@type}
-        aria-label={@accessibilityLabel}
-        :on-click={@click}
-        disabled={@disabled}
-        class={
-          ["Polaris-Button"] ++ @class ++ [
+    <button
+      type={@type}
+      aria-label={@accessibilityLabel}
+      :on-click={@click}
+      disabled={@disabled}
+      class={["Polaris-Button"] ++
+        @class ++
+        [
           "#{css_module_name("destructive")}": @destructive,
           "#{css_module_name("fullWidth")}": @fullWidth,
           "#{css_module_name("monochrome")}": @monochrome,
@@ -109,17 +110,17 @@ defmodule SurfacePolaris.Actions.Button do
           "#{css_variation_name("size", "slim")}": @size == "slim",
           "#{css_variation_name("size", "medium")}": @size == "medium",
           "#{css_variation_name("size", "large")}": @size == "large"
-        ]
-        }
-        :attrs={@opts}
-        type="button">
-        <span class="Polaris-Button__Content">
-          <Spinner :if={@loading} size="small"></Spinner>
-          <span class="Polaris-Button__Text" :unless={@loading}>
-            <#slot>{@label}</#slot>
-          </span>
+        ]}
+      {...@opts}
+      type="button"
+    >
+      <span class="Polaris-Button__Content">
+        <Spinner :if={@loading} size="small" />
+        <span class="Polaris-Button__Text" :unless={@loading}>
+          <#slot>{@label}</#slot>
         </span>
-      </button>
+      </span>
+    </button>
     """
   end
 end

@@ -9,7 +9,7 @@ defmodule SurfacePolaris.ImagesIcons.KeyboardKey do
 
   def render(assigns) do
     ~F"""
-    <kbd class="Polaris-KeyboardKey"><#slot/></kbd>
+    <kbd class="Polaris-KeyboardKey"><#slot /></kbd>
     """
   end
 end

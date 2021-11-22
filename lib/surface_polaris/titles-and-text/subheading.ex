@@ -13,13 +13,13 @@ defmodule SurfacePolaris.TitlesText.Subheading do
 
   def render(assigns) do
     ~F"""
-    <h1 :if={@element == "h1"} class={"Polaris-Subheading"}><#slot/></h1>
-    <h2 :if={@element == "h2"} class={"Polaris-Subheading"}><#slot/></h2>
-    <h3 :if={@element == "h3"} class={"Polaris-Subheading"}><#slot/></h3>
-    <h4 :if={@element == "h4"} class={"Polaris-Subheading"}><#slot/></h4>
-    <h5 :if={@element == "h5"} class={"Polaris-Subheading"}><#slot/></h5>
-    <h6 :if={@element == "h6"} class={"Polaris-Subheading"}><#slot/></h6>
-     <p :if={@element == "p"} class={"Polaris-Subheading"}><#slot/></p>
+    <h1 :if={@element == "h1"} class="Polaris-Subheading"><#slot /></h1>
+    <h2 :if={@element == "h2"} class="Polaris-Subheading"><#slot /></h2>
+    <h3 :if={@element == "h3"} class="Polaris-Subheading"><#slot /></h3>
+    <h4 :if={@element == "h4"} class="Polaris-Subheading"><#slot /></h4>
+    <h5 :if={@element == "h5"} class="Polaris-Subheading"><#slot /></h5>
+    <h6 :if={@element == "h6"} class="Polaris-Subheading"><#slot /></h6>
+    <p :if={@element == "p"} class="Polaris-Subheading"><#slot /></p>
     """
   end
 end

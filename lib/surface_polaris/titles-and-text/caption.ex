@@ -11,7 +11,7 @@ defmodule SurfacePolaris.TitlesText.Caption do
 
   def render(assigns) do
     ~F"""
-    <p class="Polaris-Caption"><#slot/></p>
+    <p class="Polaris-Caption"><#slot /></p>
     """
   end
 end

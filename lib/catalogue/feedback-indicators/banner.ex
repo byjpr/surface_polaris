@@ -11,9 +11,9 @@ defmodule SurfacePolaris.Catalogue.Banner do
 
     def render(assigns) do
       ~F"""
-        <Banner title="Order archived">
-          <p>This order was archived on March 7, 2017 at 3:12pm EDT.</p>
-        </Banner>
+      <Banner title="Order archived">
+        <p>This order was archived on March 7, 2017 at 3:12pm EDT.</p>
+      </Banner>
       """
     end
   end
@@ -28,17 +28,23 @@ defmodule SurfacePolaris.Catalogue.Banner do
 
     def render(assigns) do
       ~F"""
-        <Banner
-          title="Some of your product variants are missing weights"
-          status="warning"
-          action={[content: "Edit variant weights", url: "http://localhost:4000/components/SurfacePolaris.Feedback.Banner/example"]}
-          secondaryAction={[content: "Edit variant weights", url: "http://localhost:4000/components/SurfacePolaris.Feedback.Banner/example"]}
-        >
-          <p>
+      <Banner
+        title="Some of your product variants are missing weights"
+        status="warning"
+        action={[
+          content: "Edit variant weights",
+          url: "http://localhost:4000/components/SurfacePolaris.Feedback.Banner/example"
+        ]}
+        secondaryAction={[
+          content: "Edit variant weights",
+          url: "http://localhost:4000/components/SurfacePolaris.Feedback.Banner/example"
+        ]}
+      >
+        <p>
           Add weights to show accurate rates at checkout and when buying shipping
           labels in Shopify.
-          </p>
-        </Banner>
+        </p>
+      </Banner>
       """
     end
   end

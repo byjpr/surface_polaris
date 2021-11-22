@@ -10,7 +10,7 @@ defmodule SurfacePolaris.TitlesText.VisuallyHidden do
 
   def render(assigns) do
     ~F"""
-    <span class="Polaris-VisuallyHidden"><#slot/></span>
+    <span class="Polaris-VisuallyHidden"><#slot /></span>
     """
   end
 end

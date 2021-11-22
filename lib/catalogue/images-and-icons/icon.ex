@@ -11,7 +11,7 @@ defmodule SurfacePolaris.Catalogue.Icon do
 
     def render(assigns) do
       ~F"""
-      <Icon source="AbandonedCartMajor"></Icon>
+      <Icon source="AbandonedCartMajor" />
       """
     end
   end
@@ -26,7 +26,7 @@ defmodule SurfacePolaris.Catalogue.Icon do
 
     def render(assigns) do
       ~F"""
-      <Icon source="AbandonedCartMajor" backdrop={true}></Icon>
+      <Icon source="AbandonedCartMajor" backdrop />
       """
     end
   end
@@ -41,7 +41,7 @@ defmodule SurfacePolaris.Catalogue.Icon do
 
     def render(assigns) do
       ~F"""
-      <Icon source="AbandonedCartMajor" color="critical"></Icon>
+      <Icon source="AbandonedCartMajor" color="critical" />
       """
     end
   end

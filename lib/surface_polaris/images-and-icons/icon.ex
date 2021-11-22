@@ -18,8 +18,12 @@ defmodule SurfacePolaris.ImagesIcons.Icon do
 
   def render(assigns) do
     ~F"""
-    <span class={"Polaris-Icon", "Polaris-Icon--hasBackdrop": @backdrop, "Polaris-Icon--color#{String.capitalize(@color)} Polaris-Icon--applyColor": @color,}>
-    	{apply(PolarisIcon, atomify_name(@source), [])}
+    <span class={
+      "Polaris-Icon",
+      "Polaris-Icon--hasBackdrop": @backdrop,
+      "Polaris-Icon--color#{String.capitalize(@color)} Polaris-Icon--applyColor": @color
+    }>
+      {apply(PolarisIcon, atomify_name(@source), [])}
     </span>
     """
   end

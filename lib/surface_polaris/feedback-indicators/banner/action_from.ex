@@ -10,19 +10,21 @@ defmodule SurfacePolaris.Feedback.Banner.ActionFrom do
 
   def render(assigns) do
     ~F"""
-      <button
-        :if={!Keyword.get(@action, :url)}
-        :on-click={@click}
-        class={["Polaris-Banner__Button": !@secondary, "Polaris-Banner__SecondaryAction": @secondary]}>
-        {Keyword.get(@action, :content)}
-      </button>
+    <button
+      :if={!Keyword.get(@action, :url)}
+      :on-click={@click}
+      class={["Polaris-Banner__Button": !@secondary, "Polaris-Banner__SecondaryAction": @secondary]}
+    >
+      {Keyword.get(@action, :content)}
+    </button>
 
-      <a
-        :if={Keyword.get(@action, :url)}
-        href={Keyword.get(@action, :url)}
-        class={["Polaris-Banner__Button": !@secondary, "Polaris-Banner__SecondaryAction": @secondary]}>
-        {Keyword.get(@action, :content)}
-      </a>
+    <a
+      :if={Keyword.get(@action, :url)}
+      href={Keyword.get(@action, :url)}
+      class={["Polaris-Banner__Button": !@secondary, "Polaris-Banner__SecondaryAction": @secondary]}
+    >
+      {Keyword.get(@action, :content)}
+    </a>
     """
   end
 end

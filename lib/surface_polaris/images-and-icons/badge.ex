@@ -19,16 +19,15 @@ defmodule SurfacePolaris.ImagesIcons.Badge do
 
   def render(assigns) do
     ~F"""
-    <span
-    class={
-      ["Polaris-Badge"] ++ [
-      "#{css_variation_name("status", "success")}": @status == "success",
-      "#{css_variation_name("status", "info")}": @status == "info",
-      "#{css_variation_name("status", "attention")}": @status == "attention",
-      "#{css_variation_name("status", "critical")}": @status == "critical",
-      "#{css_variation_name("status", "warning")}": @status == "warning",
-      "#{css_variation_name("status", "new")}": @status == "new",
-    ]}><#slot/></span>
+    <span class={["Polaris-Badge"] ++
+      [
+        "#{css_variation_name("status", "success")}": @status == "success",
+        "#{css_variation_name("status", "info")}": @status == "info",
+        "#{css_variation_name("status", "attention")}": @status == "attention",
+        "#{css_variation_name("status", "critical")}": @status == "critical",
+        "#{css_variation_name("status", "warning")}": @status == "warning",
+        "#{css_variation_name("status", "new")}": @status == "new"
+      ]}><#slot /></span>
     """
   end
 end

@@ -11,7 +11,7 @@ defmodule SurfacePolaris.Catalogue.Link do
 
     def render(assigns) do
       ~F"""
-        <Link external={true} url="https://help.shopify.com/manual/orders/fulfill-orders">fulfilling orders</Link>
+      <Link external url="https://help.shopify.com/manual/orders/fulfill-orders">fulfilling orders</Link>
       """
     end
   end
@@ -26,7 +26,7 @@ defmodule SurfacePolaris.Catalogue.Link do
 
     def render(assigns) do
       ~F"""
-        <Link url="https://help.shopify.com/manual/orders/fulfill-orders">fulfilling orders</Link>
+      <Link url="https://help.shopify.com/manual/orders/fulfill-orders">fulfilling orders</Link>
       """
     end
   end

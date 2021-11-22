@@ -21,15 +21,16 @@ defmodule SurfacePolaris.Navigation.Link do
 
   def render(assigns) do
     ~F"""
-    <a href={"#{@url}"}
+    <a
+      href={"#{@url}"}
       :on-click={@click}
-      class={["Polaris-Link", "is-#{@monochrome}": @monochrome, "is-#{@remove_underline}": @remove_underline]}>
-
-      <#slot/>
+      class={["Polaris-Link", "is-#{@monochrome}": @monochrome, "is-#{@remove_underline}": @remove_underline]}
+    >
+      <#slot />
 
       <span :if={@external} class="Polaris-Link__IconLockup">
         <span class="Polaris-Link__IconLayout">
-          <Icon source="ExternalSmallMinor"></Icon>
+          <Icon source="ExternalSmallMinor" />
         </span>
       </span>
     </a>
