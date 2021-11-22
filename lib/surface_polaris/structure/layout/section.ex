@@ -14,7 +14,13 @@ defmodule SurfacePolaris.Structure.Layout.Section do
 
   def render(assigns) do
     ~F"""
-    <div class={["Polaris-Layout__Section"]}>
+    <div class={[
+      "Polaris-Layout__Section",
+      "Polaris-Layout__Section--secondary": @secondary,
+      "Polaris-Layout__Section--fullWidth": @fullWidth,
+      "Polaris-Layout__Section--oneHalf": @oneHalf,
+      "Polaris-Layout__Section--oneThird": @oneThird
+    ]}>
       <#slot />
     </div>
     """
