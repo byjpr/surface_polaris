@@ -150,7 +150,7 @@ defmodule SurfacePolaris.Catalogue.Layout do
       subject: SurfacePolaris.Structure.Layout,
       catalogue: SurfacePolaris.Catalogue,
       title: "Annotated layout",
-      height: "190px",
+      height: "420px",
       container: {:div, class: "temporary-workaround"},
       direction: "vertical"
 
@@ -165,8 +165,31 @@ defmodule SurfacePolaris.Catalogue.Layout do
           title="Store details"
           description="Shopify and your customers will use this information to contact you."
         >
-          <Card sectioned>
-            <TextStyle variation="subdued">1931 units available</TextStyle>
+          <Card title="Customer">
+            <Card.Section>
+              <p>John Smith</p>
+            </Card.Section>
+            <Card.Section title="Addresses">
+              <Card.Subsection>
+                123 First St
+                <br>
+                Somewhere
+                <br>
+                The Universe
+              </Card.Subsection>
+              <Card.Subsection>
+                123 Second St
+                <br>
+                Somewhere
+                <br>
+                The Universe
+              </Card.Subsection>
+            </Card.Section>
+            <Card.Section>
+              <Card.Subsection>
+                A single subsection without a sibling has no visual appearance
+              </Card.Subsection>
+            </Card.Section>
           </Card>
         </Layout.AnnotatedSection>
       </Layout>
