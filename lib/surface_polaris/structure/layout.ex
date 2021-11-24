@@ -15,7 +15,11 @@ defmodule SurfacePolaris.Structure.Layout do
   def render(assigns) do
     ~F"""
     <div class={["Polaris-Layout"]}>
-      <#slot />
+      <div class="Polaris-Layout__Section" :if={@sectioned}>
+        <#slot />
+      </div>
+
+      <#slot :if={!@sectioned} />
     </div>
     """
   end
