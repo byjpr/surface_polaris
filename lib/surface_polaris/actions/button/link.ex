@@ -1,10 +1,5 @@
-defmodule SurfacePolaris.Actions.Button do
-  @moduledoc """
-  Buttons are used primarily for actions,
-  such as “Add”, “Close”, “Cancel”, or “Save”.
-  Plain buttons, which look similar to links, are used
-  for less important or less commonly used actions, such as “view shipping settings”.
-  """
+defmodule SurfacePolaris.Actions.Button.Link do
+  @moduledoc false
 
   use Surface.Component
   alias SurfacePolaris.Feedback.Spinner
@@ -19,9 +14,6 @@ defmodule SurfacePolaris.Actions.Button do
 
   @doc "The label of the button, when no content (default slot) is provided"
   prop(label, :string)
-
-  @doc "The aria label for the button"
-  prop(accessibilityLabel, :string)
 
   use SurfacePolaris.ColorProp
 
@@ -58,9 +50,6 @@ defmodule SurfacePolaris.Actions.Button do
   @doc "Done: Removes underline from button text (including on interaction) when `monochrome` and `plain` are true"
   prop(removeUnderline, :boolean, default: false)
 
-  @doc "Allows the button to submit a form"
-  prop(submit, :boolean, default: false)
-
   @doc "Done: Changes the inner text alignment of the button"
   prop(textAlign, :string, values: ~w(false left right center), default: false)
 
@@ -84,60 +73,41 @@ defmodule SurfacePolaris.Actions.Button do
   """
   slot(default)
 
+  defp css_module_name(name), do: SPCSS.module_name(@module_name, name)
+  defp css_variation_name(name, value), do: SPCSS.variation_name(@module_name, name, value)
+
   def render(assigns) do
     ~F"""
-    {#if @url}
-      <SurfacePolaris.Actions.Button.Link
-        {=@type}
-        {=@label}
-        {=@color}
-        {=@size}
-        {=@destructive}
-        {=@disabled}
-        {=@external}
-        {=@fullWidth}
-        {=@loading}
-        {=@monochrome}
-        {=@outline}
-        {=@plain}
-        {=@primary}
-        {=@removeUnderline}
-        {=@textAlign}
-        {=@url}
-        {=@click}
-        {=@class}
-        {=@opts}
-      >
-        <#slot>{@label}</#slot>
-      </SurfacePolaris.Actions.Button.Link>
-    {#else}
-      <SurfacePolaris.Actions.Button.Button
-      {=@type}
-      {=@label}
-      {=@accessibilityLabel}
-      {=@color}
-      {=@size}
-      {=@destructive}
-      {=@disabled}
-      {=@external}
-      {=@fullWidth}
-      {=@loading}
-      {=@monochrome}
-      {=@outline}
-      {=@plain}
-      {=@primary}
-      {=@removeUnderline}
-      {=@submit}
-      {=@textAlign}
-      {=@url}
-      {=@click}
-      {=@class}
-      {=@opts}
+    <a
+      href={@url}
+      :on-click={@click}
+      class={["Polaris-Button"] ++
+        @class ++
+        [
+          "#{css_module_name("disabled")}": @disabled,
+          "#{css_module_name("destructive")}": @destructive,
+          "#{css_module_name("fullWidth")}": @fullWidth,
+          "#{css_module_name("monochrome")}": @monochrome,
+          "#{css_module_name("outline")}": @outline,
+          "#{css_module_name("plain")}": @plain,
+          "#{css_module_name("primary")}": @primary,
+          "#{css_module_name("removeUnderline")}": @removeUnderline,
+          "#{css_variation_name("textAlign", "left")}": @textAlign == "left",
+          "#{css_variation_name("textAlign", "center")}": @textAlign == "center",
+          "#{css_variation_name("textAlign", "right")}": @textAlign == "right",
+          "#{css_variation_name("size", "slim")}": @size == "slim",
+          "#{css_variation_name("size", "medium")}": @size == "medium",
+          "#{css_variation_name("size", "large")}": @size == "large"
+        ]}
+      {...@opts}
     >
-        <#slot>{@label}</#slot>
-      </SurfacePolaris.Actions.Button.Button>
-    {/if}
-
+      <span class="Polaris-Button__Content">
+        <Spinner :if={@loading} size="small" />
+        <span class="Polaris-Button__Text" :unless={@loading}>
+          <#slot>{@label}</#slot>
+        </span>
+      </span>
+    </a>
     """
   end
 end
