@@ -73,6 +73,8 @@ defmodule SurfacePolaris.Actions.Button.Button do
   """
   prop(opts, :keyword, default: [])
 
+  prop(action_list, :boolean, default: false)
+
   @doc """
   The content of the generated `<button>` element. If no content is provided,
   the value of property `label` is used instead.
@@ -88,10 +90,11 @@ defmodule SurfacePolaris.Actions.Button.Button do
       type={@type}
       aria-label={@accessibilityLabel}
       :on-click={@click}
-      disabled={@disabled}
-      class={["Polaris-Button"] ++
-        @class ++
+      disabled={(@disabled || @loading)}
+      class={@class ++
         [
+          "Polaris-Button": !@action_list,
+          "Polaris-ActionList__Item": @action_list,
           "#{css_module_name("disabled")}": @disabled,
           "#{css_module_name("destructive")}": @destructive,
           "#{css_module_name("fullWidth")}": @fullWidth,
@@ -100,6 +103,8 @@ defmodule SurfacePolaris.Actions.Button.Button do
           "#{css_module_name("plain")}": @plain,
           "#{css_module_name("primary")}": @primary,
           "#{css_module_name("removeUnderline")}": @removeUnderline,
+          "Polaris-Button--disabled": @loading,
+          "Polaris-Button--loading": @loading,
           "#{css_variation_name("textAlign", "left")}": @textAlign == "left",
           "#{css_variation_name("textAlign", "center")}": @textAlign == "center",
           "#{css_variation_name("textAlign", "right")}": @textAlign == "right",
@@ -110,9 +115,11 @@ defmodule SurfacePolaris.Actions.Button.Button do
       {...@opts}
       type="button"
     >
-      <span class="Polaris-Button__Content">
-        <Spinner :if={@loading} size="small" />
-        <span class="Polaris-Button__Text" :unless={@loading}>
+      <span class={["Polaris-Button__Content": !@action_list, "Polaris-ActionList__Content": @action_list]}>
+        <span :if={@loading} class="Polaris-Button__Spinner">
+          <Spinner size="small" />
+        </span>
+        <span class={["Polaris-Button__Text": !@action_list, "Polaris-ActionList__Text": @action_list]}>
           <#slot>{@label}</#slot>
         </span>
       </span>
