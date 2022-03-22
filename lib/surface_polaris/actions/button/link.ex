@@ -67,6 +67,9 @@ defmodule SurfacePolaris.Actions.Button.Link do
   """
   prop(opts, :keyword, default: [])
 
+  @doc "The flag to replace the current history or push a new state"
+  prop replace, :boolean, default: false
+
   @doc """
   The content of the generated `<button>` element. If no content is provided,
   the value of property `label` is used instead.
@@ -81,6 +84,8 @@ defmodule SurfacePolaris.Actions.Button.Link do
     <a
       href={@url}
       :on-click={@click}
+      data-phx-link="patch"
+      data-phx-link-state={if @replace, do: "replace", else: "push"}
       class={["Polaris-Button"] ++
         @class ++
         [
