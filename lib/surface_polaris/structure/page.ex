@@ -67,7 +67,7 @@ defmodule SurfacePolaris.Structure.Page do
 
   def render(assigns) do
     ~F"""
-    <div class="Polaris-Page">
+    <div class={"Polaris-Page", "Polaris-Page--fullWidth": @fullWidth}>
       <SurfacePolaris.Structure.Page.Header {=@breadcrumbs} {=@title} {=@titleMetadata} {=@subtitle} {=@primaryAction} />
 
       <SurfacePolaris.Structure.Page.Content>
