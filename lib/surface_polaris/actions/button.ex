@@ -78,6 +78,8 @@ defmodule SurfacePolaris.Actions.Button do
   """
   prop(opts, :keyword, default: [])
 
+  prop(action_list, :boolean, default: false)
+
   @doc """
   The content of the generated `<button>` element. If no content is provided,
   the value of property `label` is used instead.
@@ -106,6 +108,7 @@ defmodule SurfacePolaris.Actions.Button do
         {=@url}
         {=@click}
         {=@class}
+        {=@action_list}
         {=@opts}
       >
         <#slot>{@label}</#slot>
@@ -132,6 +135,7 @@ defmodule SurfacePolaris.Actions.Button do
       {=@url}
       {=@click}
       {=@class}
+      {=@action_list}
       {=@opts}
     >
         <#slot>{@label}</#slot>
