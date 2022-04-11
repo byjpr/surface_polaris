@@ -11,6 +11,10 @@ defmodule SurfacePolaris.Catalogue.InlineError do
       container: {:div, class: "temporary-workaround"},
       direction: "vertical"
 
+    @moduledoc """
+    Use when the merchant has entered information that is not valid into multiple fields inside of a form, or needs to be displayed in a non-standard position in the form layout.
+    """
+
     def render(assigns) do
       ~F"""
       <InlineError fieldID="myFieldID" message="Store name is required" />
@@ -27,6 +31,10 @@ defmodule SurfacePolaris.Catalogue.InlineError do
       container: {:div, class: "temporary-workaround"},
       direction: "vertical"
 
+    @moduledoc """
+    When no message is supplied `InlineError` will not render
+    """
+
     def render(assigns) do
       ~F"""
       <InlineError fieldID="myFieldID" />
@@ -42,6 +50,10 @@ defmodule SurfacePolaris.Catalogue.InlineError do
       height: "140px",
       container: {:div, class: "temporary-workaround"},
       direction: "vertical"
+
+    @moduledoc """
+    When message is supplied as an empty string `InlineError` will not render
+    """
 
     def render(assigns) do
       ~F"""
