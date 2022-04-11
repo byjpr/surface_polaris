@@ -13,7 +13,39 @@ defmodule SurfacePolaris.Catalogue.TextField do
 
     def render(assigns) do
       ~F"""
-      <TextField />
+      <TextField label="Store name" />
+      """
+    end
+  end
+
+  defmodule HideLabel do
+    use Surface.Catalogue.Example,
+      subject: SurfacePolaris.Form.TextField,
+      catalogue: SurfacePolaris.Catalogue,
+      title: "Hidden Label",
+      height: "140px",
+      container: {:div, class: "temporary-workaround"},
+      direction: "vertical"
+
+    def render(assigns) do
+      ~F"""
+      <TextField label="Store name" label_hidden />
+      """
+    end
+  end
+
+  defmodule Disabled do
+    use Surface.Catalogue.Example,
+      subject: SurfacePolaris.Form.TextField,
+      catalogue: SurfacePolaris.Catalogue,
+      title: "Disabled",
+      height: "140px",
+      container: {:div, class: "temporary-workaround"},
+      direction: "vertical"
+
+    def render(assigns) do
+      ~F"""
+      <TextField label="Store name" disabled />
       """
     end
   end
@@ -31,8 +63,7 @@ defmodule SurfacePolaris.Catalogue.TextField do
 
     def render(assigns) do
       ~F"""
-      <TextField />
-      <InlineError fieldID="myFieldID" message="Store name is required" />
+      <TextField label="Store name" error="Store name is required" />
       """
     end
   end
