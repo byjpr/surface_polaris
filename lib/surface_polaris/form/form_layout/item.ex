@@ -1,5 +1,6 @@
 defmodule SurfacePolaris.Form.FormLayout.Item do
-  @moduledoc false
+  @moduledoc """
+  """
 
   use Surface.Component
 

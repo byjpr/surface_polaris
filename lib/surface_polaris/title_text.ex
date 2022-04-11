@@ -1,3 +1,4 @@
 defmodule SurfacePolaris.TitlesText do
-  @moduledoc false
+  @moduledoc """
+  """
 end

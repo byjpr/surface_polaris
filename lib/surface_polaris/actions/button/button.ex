@@ -1,5 +1,6 @@
 defmodule SurfacePolaris.Actions.Button.Button do
-  @moduledoc false
+  @moduledoc """
+  """
 
   use Surface.Component
   alias SurfacePolaris.Feedback.Spinner

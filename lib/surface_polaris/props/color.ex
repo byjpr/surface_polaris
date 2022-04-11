@@ -1,5 +1,6 @@
 defmodule SurfacePolaris.ColorProp do
-  @moduledoc false
+  @moduledoc """
+  """
   defmacro __using__(component_doc_name) do
     component_doc_name =
       if component_doc_name != [] do

@@ -1,3 +1,4 @@
 defmodule SurfacePolaris.ListTables do
-  @moduledoc false
+  @moduledoc """
+  """
 end

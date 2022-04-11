@@ -1,5 +1,6 @@
 defmodule SurfacePolaris.Structure.Card.Section.Header do
-  @moduledoc false
+  @moduledoc """
+  """
 
   use Surface.Component
 

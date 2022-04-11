@@ -1,5 +1,6 @@
 defmodule SurfacePolaris.Actions.ButtonGroup do
-  @moduledoc false
+  @moduledoc """
+  """
 
   use Surface.Component
   prop(connectedTop, :boolean, default: false)

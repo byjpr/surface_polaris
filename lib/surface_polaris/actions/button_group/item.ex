@@ -1,5 +1,6 @@
 defmodule SurfacePolaris.Actions.ButtonGroup.Item do
-  @moduledoc false
+  @moduledoc """
+  """
 
   use Surface.Component
 

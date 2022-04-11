@@ -1,3 +1,4 @@
 defmodule SurfacePolaris.Actions do
-  @moduledoc false
+  @moduledoc """
+  """
 end

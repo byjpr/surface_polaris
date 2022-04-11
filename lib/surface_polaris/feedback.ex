@@ -1,3 +1,4 @@
 defmodule SurfacePolaris.Feedback do
-  @moduledoc false
+  @moduledoc """
+  """
 end

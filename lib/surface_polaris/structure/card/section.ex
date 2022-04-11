@@ -1,5 +1,6 @@
 defmodule SurfacePolaris.Structure.Card.Section do
-  @moduledoc false
+  @moduledoc """
+  """
 
   use Surface.Component
   alias SurfacePolaris.Structure.Card.Section

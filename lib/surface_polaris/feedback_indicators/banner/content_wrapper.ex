@@ -1,5 +1,6 @@
 defmodule SurfacePolaris.Feedback.Banner.ContentWrapper do
-  @moduledoc false
+  @moduledoc """
+  """
 
   use Surface.Component
 

@@ -1,5 +1,6 @@
 defmodule SurfacePolaris.Form.Tag do
-  @moduledoc false
+  @moduledoc """
+  """
 
   use Surface.Component
 

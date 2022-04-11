@@ -1,3 +1,4 @@
 defmodule SurfacePolaris.ImagesIcons do
-  @moduledoc false
+  @moduledoc """
+  """
 end

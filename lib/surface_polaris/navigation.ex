@@ -1,3 +1,4 @@
 defmodule SurfacePolaris.Navigation do
-  @moduledoc false
+  @moduledoc """
+  """
 end

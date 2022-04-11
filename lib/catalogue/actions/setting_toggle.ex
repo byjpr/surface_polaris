@@ -1,5 +1,6 @@
 defmodule SurfacePolaris.Catalogue.SettingToggle do
-  @moduledoc false
+  @moduledoc """
+"""
   defmodule BasicButton do
     use Surface.Catalogue.Example,
       subject: SurfacePolaris.Actions.SettingToggle,
@@ -8,7 +9,8 @@ defmodule SurfacePolaris.Catalogue.SettingToggle do
       height: "90px",
       container: {:div, class: "temporary-workaround"}
 
-    @moduledoc false
+    @moduledoc """
+"""
 
     def render(assigns) do
       ~F"""

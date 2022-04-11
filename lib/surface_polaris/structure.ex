@@ -1,3 +1,4 @@
 defmodule SurfacePolaris.Structure do
-  @moduledoc false
+  @moduledoc """
+  """
 end

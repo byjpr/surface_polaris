@@ -12,7 +12,8 @@ defmodule SurfacePolaris.Feedback.Spinner do
   prop(size, :string, values: ~w(small large), default: "large")
 
   defmodule Large do
-    @moduledoc false
+    @moduledoc """
+    """
 
     use Surface.Component
 
@@ -26,7 +27,8 @@ defmodule SurfacePolaris.Feedback.Spinner do
   end
 
   defmodule Small do
-    @moduledoc false
+    @moduledoc """
+    """
 
     use Surface.Component
 

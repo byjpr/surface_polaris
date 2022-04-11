@@ -1,5 +1,6 @@
 defmodule SurfacePolaris.Actions.AccountConnection do
-  @moduledoc false
+  @moduledoc """
+  """
 
   use Surface.Component
 
