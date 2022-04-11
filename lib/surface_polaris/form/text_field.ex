@@ -6,6 +6,7 @@ defmodule SurfacePolaris.Form.TextField do
 
   use Surface.Component
 
+  @doc "Determine type of input"
   prop(type, :string,
     values: [
       "text",
@@ -25,6 +26,7 @@ defmodule SurfacePolaris.Form.TextField do
     default: "text"
   )
 
+  @doc "Determines the alignment of the text in the input"
   prop(alignment, :string,
     values: [
       "default",
@@ -35,6 +37,7 @@ defmodule SurfacePolaris.Form.TextField do
     default: "default"
   )
 
+  @doc "Choose the keyboard that should be used on mobile devices"
   prop(input_mode, :string,
     values: [
       "none",
