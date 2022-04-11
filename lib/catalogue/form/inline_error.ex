@@ -61,4 +61,24 @@ defmodule SurfacePolaris.Catalogue.InlineError do
       """
     end
   end
+
+  defmodule NoFieldID do
+    use Surface.Catalogue.Example,
+      subject: SurfacePolaris.Form.InlineError,
+      catalogue: SurfacePolaris.Catalogue,
+      title: "No `fieldID`",
+      height: "140px",
+      container: {:div, class: "temporary-workaround"},
+      direction: "vertical"
+
+    @moduledoc """
+    Not supplying `fieldID` will raise an exception. All InlineErrors are related to inputs.
+    """
+
+    def render(assigns) do
+      ~F"""
+      <InlineError />
+      """
+    end
+  end
 end
