@@ -26,8 +26,11 @@ defmodule SurfacePolaris.Form.Select do
           </label>
         </div>
       </div>
-      <div class="Polaris-Select" data-controller="polariselect">
-        <Surface.Components.Form.Select class="Polaris-Select__Input" form="user" field="role" options={"Admin": "admin", "User": "user", "Mod": "mod"} opts={"data-polariselect-target": "source", "data-action": "polariselect#change"} />
+      <div class={"Polaris-Select",
+        "Polaris-Select--disabled": @disabled,
+        "Polaris-Select--error": @error && (@error != "")
+      } data-controller="polariselect">
+        <Surface.Components.Form.Select id={id_from_label(@label)} class="Polaris-Select__Input" form="user" field="role" options={"Admin": "admin", "User": "user", "Mod": "mod"} opts={"data-polariselect-target": "source", "data-action": "polariselect#change"} />
         <div class="Polaris-Select__Content" aria-hidden="true">
           <span class="Polaris-Select__SelectedOption" data-polariselect-target="target"></span>
           <span class="Polaris-Select__Icon">
@@ -40,6 +43,9 @@ defmodule SurfacePolaris.Form.Select do
           </span>
         </div>
         <div class="Polaris-Select__Backdrop"></div>
+      </div>
+      <div class="Polaris-Labelled__Error">
+        <SurfacePolaris.Form.InlineError fieldID={id_from_label(@label)} message={@error} />
       </div>
     </div>
     """
