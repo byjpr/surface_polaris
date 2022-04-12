@@ -43,7 +43,7 @@ defmodule SurfacePolaris.Structure.Stack do
       "#{css_variation_name("distribution", @distribution)}": @distribution !== "default",
       "#{css_variation_name("spacing", @spacing)}": @spacing !== "default",
       "Polaris-Stack--vertical": @vertical,
-      "Polaris-Stack--noWrap": @wrap
+      "Polaris-Stack--noWrap": !@wrap
     }>
       <#slot />
     </div>
