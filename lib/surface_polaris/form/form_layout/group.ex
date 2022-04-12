@@ -22,7 +22,9 @@ defmodule SurfacePolaris.Form.FormLayout.Group do
       "Polaris-FormLayout--condensed": @condensed == true,
       "Polaris-FormLayout--grouped": @condensed == false
     }>
-      <#slot />
+      <div class="Polaris-FormLayout__Items">
+        <#slot />
+      </div>
     </div>
     """
   end
