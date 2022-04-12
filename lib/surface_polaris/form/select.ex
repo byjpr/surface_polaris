@@ -9,6 +9,8 @@ defmodule SurfacePolaris.Form.Select do
   """
 
   use Surface.Component
+  use SurfacePolaris.Form.WithLabels
+  use SurfacePolaris.Form.WithErrors
 
   prop(options, :list)
 
@@ -16,10 +18,12 @@ defmodule SurfacePolaris.Form.Select do
 
   def render(assigns) do
     ~F"""
-    <div>
+    <div class={"Polaris-Labelled--hidden": @label_hidden}>
       <div class="Polaris-Labelled__LabelWrapper">
         <div class="Polaris-Label">
-          <label id="PolarisSelect10Label" for="PolarisSelect10" class="Polaris-Label__Text">Date range</label>
+          <label id="PolarisTextField4Label" for={id_from_label(@label)} class={"Polaris-Label__Text", "Polaris-Label__RequiredIndicator": @required_indicator}>
+            {@label}
+          </label>
         </div>
       </div>
       <div class="Polaris-Select" data-controller="polariselect">

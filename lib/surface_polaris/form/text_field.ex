@@ -5,6 +5,8 @@ defmodule SurfacePolaris.Form.TextField do
   """
 
   use Surface.Component
+  use SurfacePolaris.Form.WithLabels
+  use SurfacePolaris.Form.WithErrors
 
   @doc "Determine type of input"
   prop(type, :string,
@@ -51,18 +53,6 @@ defmodule SurfacePolaris.Form.TextField do
     ],
     default: "text"
   )
-
-  @doc "Error to display beneath the label"
-  prop(error, :string, default: "")
-
-  @doc "Label for the input"
-  prop(label, :string, required: true)
-
-  @doc "Visually hide the label"
-  prop(label_hidden, :boolean, default: false)
-
-  @doc "Visual required indicator, adds an asterisk to label"
-  prop(required_indicator, :boolean, default: false)
 
   @doc "Disable the input"
   prop(disabled, :boolean, default: false)
@@ -112,9 +102,5 @@ defmodule SurfacePolaris.Form.TextField do
       </div>
     </div>
     """
-  end
-
-  def id_from_label(label) do
-    "TextField#{Recase.to_pascal(label)}"
   end
 end
