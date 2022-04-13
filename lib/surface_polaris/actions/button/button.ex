@@ -1,4 +1,4 @@
-defmodule SurfacePolaris.Actions.Button.Button do
+defmodule SurfacePolaris.Button.Button do
   @moduledoc """
   """
 

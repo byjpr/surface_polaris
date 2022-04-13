@@ -1,4 +1,4 @@
-defmodule SurfacePolaris.Actions.AccountConnection do
+defmodule SurfacePolaris.AccountConnection do
   @moduledoc """
   """
 
@@ -54,7 +54,7 @@ defmodule SurfacePolaris.Actions.AccountConnection do
       </div>
 
       <div class="Polaris-SettingAction__Action">
-        <SurfacePolaris.Actions.SettingToggle.Button {=@action} {=@actionContent} enabled={@connected} />
+        <SurfacePolaris.SettingToggle.Button {=@action} {=@actionContent} enabled={@connected} />
       </div>
     </div>
 

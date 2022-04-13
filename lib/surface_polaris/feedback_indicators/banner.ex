@@ -7,7 +7,7 @@ defmodule SurfacePolaris.Feedback.Banner do
 
   use Surface.Component
 
-  alias SurfacePolaris.Actions.ButtonGroup
+  alias SurfacePolaris.ButtonGroup
   alias SurfacePolaris.Feedback.Banner
 
   @module_name "Polaris-Banner"

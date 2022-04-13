@@ -1,4 +1,4 @@
-defmodule SurfacePolaris.Actions.Button do
+defmodule SurfacePolaris.Button do
   @moduledoc """
   Buttons are used primarily for actions,
   such as “Add”, “Close”, “Cancel”, or “Save”.
@@ -89,7 +89,7 @@ defmodule SurfacePolaris.Actions.Button do
   def render(assigns) do
     ~F"""
     {#if @url}
-      <SurfacePolaris.Actions.Button.Link
+      <SurfacePolaris.Button.Link
         {=@type}
         {=@label}
         {=@color}
@@ -112,9 +112,9 @@ defmodule SurfacePolaris.Actions.Button do
         {=@opts}
       >
         <#slot>{@label}</#slot>
-      </SurfacePolaris.Actions.Button.Link>
+      </SurfacePolaris.Button.Link>
     {#else}
-      <SurfacePolaris.Actions.Button.Button
+      <SurfacePolaris.Button.Button
       {=@type}
       {=@label}
       {=@accessibilityLabel}
@@ -139,7 +139,7 @@ defmodule SurfacePolaris.Actions.Button do
       {=@opts}
     >
         <#slot>{@label}</#slot>
-      </SurfacePolaris.Actions.Button.Button>
+      </SurfacePolaris.Button.Button>
     {/if}
 
     """

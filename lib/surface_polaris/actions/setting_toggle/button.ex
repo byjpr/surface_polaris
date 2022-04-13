@@ -1,4 +1,4 @@
-defmodule SurfacePolaris.Actions.SettingToggle.Button do
+defmodule SurfacePolaris.SettingToggle.Button do
   use Surface.Component
 
   prop(action, :event)
@@ -17,13 +17,13 @@ defmodule SurfacePolaris.Actions.SettingToggle.Button do
 
   def render(assigns) do
     ~F"""
-    <SurfacePolaris.Actions.Button click={@action} :if={!@enabled} primary>
+    <SurfacePolaris.Button click={@action} :if={!@enabled} primary>
       {@actionContent[:activated]}
-    </SurfacePolaris.Actions.Button>
+    </SurfacePolaris.Button>
 
-    <SurfacePolaris.Actions.Button click={@action} :if={@enabled}>
+    <SurfacePolaris.Button click={@action} :if={@enabled}>
       {@actionContent[:deactivated]}
-    </SurfacePolaris.Actions.Button>
+    </SurfacePolaris.Button>
     """
   end
 end

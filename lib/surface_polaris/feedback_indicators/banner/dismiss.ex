@@ -9,9 +9,9 @@ defmodule SurfacePolaris.Feedback.Banner.Dismiss do
   def render(assigns) do
     ~F"""
     <div class={["Polaris-Banner__Dismiss"]}>
-      <SurfacePolaris.Actions.Button plain>
+      <SurfacePolaris.Button plain>
         <SurfacePolaris.ImagesIcons.Icon source="CancelSmallMinor" />
-      </SurfacePolaris.Actions.Button>
+      </SurfacePolaris.Button>
     </div>
     """
   end

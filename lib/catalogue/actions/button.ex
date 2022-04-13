@@ -3,7 +3,7 @@ defmodule SurfacePolaris.Catalogue.Button do
   """
   defmodule BasicButton do
     use Surface.Catalogue.Example,
-      subject: SurfacePolaris.Actions.Button,
+      subject: SurfacePolaris.Button,
       catalogue: SurfacePolaris.Catalogue,
       title: "Basic button",
       height: "90px",
@@ -18,7 +18,7 @@ defmodule SurfacePolaris.Catalogue.Button do
 
   defmodule OutlineButton do
     use Surface.Catalogue.Example,
-      subject: SurfacePolaris.Actions.Button,
+      subject: SurfacePolaris.Button,
       catalogue: SurfacePolaris.Catalogue,
       title: "Outline button",
       height: "90px",
@@ -33,7 +33,7 @@ defmodule SurfacePolaris.Catalogue.Button do
 
   defmodule PlainButton do
     use Surface.Catalogue.Example,
-      subject: SurfacePolaris.Actions.Button,
+      subject: SurfacePolaris.Button,
       catalogue: SurfacePolaris.Catalogue,
       title: "Plain button",
       height: "90px",
@@ -48,7 +48,7 @@ defmodule SurfacePolaris.Catalogue.Button do
 
   defmodule PrimaryButton do
     use Surface.Catalogue.Example,
-      subject: SurfacePolaris.Actions.Button,
+      subject: SurfacePolaris.Button,
       catalogue: SurfacePolaris.Catalogue,
       title: "Primary button",
       height: "90px",

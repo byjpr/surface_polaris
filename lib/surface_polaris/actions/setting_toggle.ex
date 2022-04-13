@@ -1,4 +1,4 @@
-defmodule SurfacePolaris.Actions.SettingToggle do
+defmodule SurfacePolaris.SettingToggle do
   use Surface.Component
 
   prop(action, :event)
@@ -26,7 +26,7 @@ defmodule SurfacePolaris.Actions.SettingToggle do
       </div>
 
       <div class="Polaris-SettingAction__Action">
-        <SurfacePolaris.Actions.SettingToggle.Button {=@action} {=@actionContent} {=@enabled} />
+        <SurfacePolaris.SettingToggle.Button {=@action} {=@actionContent} {=@enabled} />
       </div>
     </div>
     """

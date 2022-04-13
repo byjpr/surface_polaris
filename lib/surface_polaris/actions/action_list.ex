@@ -1,4 +1,4 @@
-defmodule SurfacePolaris.Actions.ActionList do
+defmodule SurfacePolaris.ActionList do
   use Surface.Component
 
   prop(items, :list, default: [])
@@ -10,9 +10,9 @@ defmodule SurfacePolaris.Actions.ActionList do
         <ul class="Polaris-ActionList__Actions">
         {#for item <- @items}
           <li>
-            <SurfacePolaris.Actions.Button {...item} action_list={true}>
+            <SurfacePolaris.Button {...item} action_list={true}>
               {item[:content]}
-            </SurfacePolaris.Actions.Button>
+            </SurfacePolaris.Button>
           </li>
         {/for}
         </ul>
