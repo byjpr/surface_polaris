@@ -3,7 +3,7 @@ defmodule SurfacePolaris.Button.Link do
   """
 
   use Surface.Component
-  alias SurfacePolaris.Feedback.Spinner
+  alias SurfacePolaris.Spinner
 
   @module_name "Polaris-Button"
 
@@ -69,7 +69,7 @@ defmodule SurfacePolaris.Button.Link do
   prop(opts, :keyword, default: [])
 
   @doc "The flag to replace the current history or push a new state"
-  prop replace, :boolean, default: false
+  prop(replace, :boolean, default: false)
 
   @doc """
   The content of the generated `<button>` element. If no content is provided,

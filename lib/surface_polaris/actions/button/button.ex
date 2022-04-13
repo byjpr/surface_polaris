@@ -3,7 +3,7 @@ defmodule SurfacePolaris.Button.Button do
   """
 
   use Surface.Component
-  alias SurfacePolaris.Feedback.Spinner
+  alias SurfacePolaris.Spinner
 
   @module_name "Polaris-Button"
 

@@ -1,4 +1,4 @@
-defmodule SurfacePolaris.Structure.Page.Breadcrumbs do
+defmodule SurfacePolaris.Page.Breadcrumbs do
   use Surface.Component
 
   @doc "Collection of breadcrumbs"

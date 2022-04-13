@@ -32,25 +32,25 @@ defmodule SurfacePolaris.AccountConnection do
     ~F"""
     <div class="Polaris-SettingAction">
       <div class="Polaris-SettingAction__Setting">
-        <SurfacePolaris.Structure.Stack>
-          <SurfacePolaris.Structure.Stack.Item :if={@avatarUrl}>
+        <SurfacePolaris.Stack>
+          <SurfacePolaris.Stack.Item :if={@avatarUrl}>
             {@avatarUrl}
-          </SurfacePolaris.Structure.Stack.Item>
-          <SurfacePolaris.Structure.Stack.Item fill>
+          </SurfacePolaris.Stack.Item>
+          <SurfacePolaris.Stack.Item fill>
             <div class="Polaris-AccountConnection__Content">
               <div :if={@title}>{@title}</div>
               <div :if={@details}>
-                <SurfacePolaris.TitlesText.TextStyle>
+                <SurfacePolaris.TextStyle>
                   {#if is_function(@details)}
                     {@details.(@connected)}
                   {#else}
                     {@details}
                   {/if}
-                </SurfacePolaris.TitlesText.TextStyle>
+                </SurfacePolaris.TextStyle>
               </div>
             </div>
-          </SurfacePolaris.Structure.Stack.Item>
-        </SurfacePolaris.Structure.Stack>
+          </SurfacePolaris.Stack.Item>
+        </SurfacePolaris.Stack>
       </div>
 
       <div class="Polaris-SettingAction__Action">

@@ -1,4 +1,4 @@
-defmodule SurfacePolaris.Structure.Card.Subsection do
+defmodule SurfacePolaris.Card.Subsection do
   @moduledoc """
   """
 

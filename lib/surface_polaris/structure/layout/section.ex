@@ -1,4 +1,4 @@
-defmodule SurfacePolaris.Structure.Layout.Section do
+defmodule SurfacePolaris.Layout.Section do
   use Surface.Component
 
   @doc "Automatically adds sections to layout"

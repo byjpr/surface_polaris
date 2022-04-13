@@ -1,4 +1,4 @@
-defmodule SurfacePolaris.TitlesText.Heading do
+defmodule SurfacePolaris.Heading do
   @moduledoc """
   Headings are used as the titles of each major section
   of a page in the interface. For example, card components

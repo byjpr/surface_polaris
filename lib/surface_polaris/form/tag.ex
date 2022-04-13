@@ -1,10 +1,10 @@
-defmodule SurfacePolaris.Form.Tag do
+defmodule SurfacePolaris.Tag do
   @moduledoc """
   """
 
   use Surface.Component
 
-  slot default
+  slot(default)
 
   def render(assigns) do
     ~F"""

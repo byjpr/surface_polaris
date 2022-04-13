@@ -2,7 +2,7 @@ defmodule SurfacePolaris.Catalogue.TextStyle do
   @moduledoc """
   """
   use Surface.Catalogue.Example,
-    subject: SurfacePolaris.TitlesText.TextStyle,
+    subject: SurfacePolaris.TextStyle,
     catalogue: SurfacePolaris.Catalogue,
     title: "Extra large",
     height: "120px",

@@ -1,4 +1,4 @@
-defmodule SurfacePolaris.Structure.Layout do
+defmodule SurfacePolaris.Layout do
   @moduledoc """
   The layout component is used to create the main layout on a page.
   Layouts sections come in three main configurations: one-column, two-column, and annotated.

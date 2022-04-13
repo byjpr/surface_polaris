@@ -1,4 +1,4 @@
-defmodule SurfacePolaris.Form.FormLayout do
+defmodule SurfacePolaris.FormLayout do
   @moduledoc """
   Use form layout to arrange fields within a form using
   standard spacing. By default it stacks fields vertically
@@ -7,7 +7,7 @@ defmodule SurfacePolaris.Form.FormLayout do
 
   use Surface.Component
 
-  slot default
+  slot(default)
 
   def render(assigns) do
     ~F"""

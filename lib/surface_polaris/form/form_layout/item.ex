@@ -1,10 +1,10 @@
-defmodule SurfacePolaris.Form.FormLayout.Item do
+defmodule SurfacePolaris.FormLayout.Item do
   @moduledoc """
   """
 
   use Surface.Component
 
-  slot default
+  slot(default)
 
   def render(assigns) do
     ~F"""

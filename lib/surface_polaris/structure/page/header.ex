@@ -1,4 +1,4 @@
-defmodule SurfacePolaris.Structure.Page.Header do
+defmodule SurfacePolaris.Page.Header do
   use Surface.Component
 
   @doc "Collection of page-level groups of secondary actions"
@@ -55,15 +55,15 @@ defmodule SurfacePolaris.Structure.Page.Header do
       <div class="Polaris-Page-Header__Row">
 
         {#if @breadcrumbs}
-        <SurfacePolaris.Structure.Page.Breadcrumbs {=@breadcrumbs}/>
+        <SurfacePolaris.Page.Breadcrumbs {=@breadcrumbs}/>
         {/if}
 
         {!-- Title  --}
-        <SurfacePolaris.Structure.Page.Title {=@title} {=@titleMetadata} {=@subtitle} />
+        <SurfacePolaris.Page.Title {=@title} {=@titleMetadata} {=@subtitle} />
 
         {!-- Actions  --}
         {#if @primaryAction}
-        <SurfacePolaris.Structure.Page.Actions {=@primaryAction} />
+        <SurfacePolaris.Page.Actions {=@primaryAction} />
         {/if}
       </div>
     </div>

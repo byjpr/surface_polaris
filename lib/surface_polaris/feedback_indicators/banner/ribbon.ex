@@ -1,4 +1,4 @@
-defmodule SurfacePolaris.Feedback.Banner.Ribbon do
+defmodule SurfacePolaris.Banner.Ribbon do
   @moduledoc """
   """
 
@@ -9,7 +9,7 @@ defmodule SurfacePolaris.Feedback.Banner.Ribbon do
   def render(assigns) do
     ~F"""
     <div class={["Polaris-Banner__Ribbon"]}>
-      <SurfacePolaris.ImagesIcons.Icon source="CircleInformationMajor" />
+      <SurfacePolaris.Icon source="CircleInformationMajor" />
     </div>
     """
   end

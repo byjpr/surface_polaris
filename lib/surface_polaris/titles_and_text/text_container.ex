@@ -1,4 +1,4 @@
-defmodule SurfacePolaris.TitlesText.TextContainer do
+defmodule SurfacePolaris.TextContainer do
   @moduledoc """
   A text container is used to wrap text elements such
   as paragraphs, headings, and lists to give them vertical spacing.

@@ -1,4 +1,4 @@
-defmodule SurfacePolaris.Structure.CalloutCard do
+defmodule SurfacePolaris.CalloutCard do
   use Surface.Component
 
   slot(default)

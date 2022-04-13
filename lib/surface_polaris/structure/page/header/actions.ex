@@ -1,4 +1,4 @@
-defmodule SurfacePolaris.Structure.Page.Actions do
+defmodule SurfacePolaris.Page.Actions do
   use Surface.Component
 
   @doc "Primary page-level action"
@@ -30,9 +30,9 @@ defmodule SurfacePolaris.Structure.Page.Actions do
           </div>
         </div>
         <div class="Polaris-Page-Header__PrimaryActionWrapper">
-          <SurfacePolaris.Actions.Button {...@primaryAction}>
+          <SurfacePolaris.Button {...@primaryAction}>
             {@primaryAction[:content]}
-          </SurfacePolaris.Actions.Button>
+          </SurfacePolaris.Button>
         </div>
       </div>
     </div>

@@ -4,7 +4,7 @@ defmodule SurfacePolaris.Catalogue.InlineError do
 
   defmodule Default do
     use Surface.Catalogue.Example,
-      subject: SurfacePolaris.Form.InlineError,
+      subject: SurfacePolaris.InlineError,
       catalogue: SurfacePolaris.Catalogue,
       title: "Default behavior",
       height: "140px",
@@ -24,7 +24,7 @@ defmodule SurfacePolaris.Catalogue.InlineError do
 
   defmodule NoMessage do
     use Surface.Catalogue.Example,
-      subject: SurfacePolaris.Form.InlineError,
+      subject: SurfacePolaris.InlineError,
       catalogue: SurfacePolaris.Catalogue,
       title: "No Message",
       height: "140px",
@@ -44,7 +44,7 @@ defmodule SurfacePolaris.Catalogue.InlineError do
 
   defmodule EmptyMessage do
     use Surface.Catalogue.Example,
-      subject: SurfacePolaris.Form.InlineError,
+      subject: SurfacePolaris.InlineError,
       catalogue: SurfacePolaris.Catalogue,
       title: "Empty Message",
       height: "140px",
@@ -64,7 +64,7 @@ defmodule SurfacePolaris.Catalogue.InlineError do
 
   defmodule NoFieldID do
     use Surface.Catalogue.Example,
-      subject: SurfacePolaris.Form.InlineError,
+      subject: SurfacePolaris.InlineError,
       catalogue: SurfacePolaris.Catalogue,
       title: "No `fieldID`",
       height: "140px",

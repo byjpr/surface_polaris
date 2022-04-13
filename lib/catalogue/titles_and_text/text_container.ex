@@ -2,13 +2,13 @@ defmodule SurfacePolaris.Catalogue.TextContainer do
   @moduledoc """
   """
   use Surface.Catalogue.Example,
-    subject: SurfacePolaris.TitlesText.TextContainer,
+    subject: SurfacePolaris.TextContainer,
     catalogue: SurfacePolaris.Catalogue,
     title: "Extra large",
     height: "120px",
     container: {:div, class: "temporary-workaround"}
 
-  alias SurfacePolaris.TitlesText.Heading
+  alias SurfacePolaris.Heading
 
   def render(assigns) do
     ~F"""

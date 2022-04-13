@@ -1,10 +1,10 @@
-defmodule SurfacePolaris.Behavior.Collapsible do
+defmodule SurfacePolaris.Collapsible do
   use Surface.LiveComponent
 
   prop(expandOnPrint, :boolean, default: true)
   data(open_state, :boolean, default: true)
 
-  slot default
+  slot(default)
 
   defp style, do: "transition-duration: 500ms; transition-timing-function: ease-in-out;"
   defp open_style, do: "max-height: none; overflow: visible;"

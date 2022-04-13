@@ -1,4 +1,4 @@
-defmodule SurfacePolaris.ListTables.ExceptionList do
+defmodule SurfacePolaris.ExceptionList do
   @moduledoc """
   Caption text size is smaller than the recommended size for general reading.
   On web, it should be used only in a graph or as a timestamp for a list item.

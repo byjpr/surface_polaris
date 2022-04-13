@@ -3,7 +3,7 @@ defmodule SurfacePolaris.Catalogue.Icon do
   """
   defmodule AbandonedCartMajor do
     use Surface.Catalogue.Example,
-      subject: SurfacePolaris.ImagesIcons.Icon,
+      subject: SurfacePolaris.Icon,
       catalogue: SurfacePolaris.Catalogue,
       title: "Icon",
       height: "70px",
@@ -18,7 +18,7 @@ defmodule SurfacePolaris.Catalogue.Icon do
 
   defmodule AbandonedCartMajorBackdrop do
     use Surface.Catalogue.Example,
-      subject: SurfacePolaris.ImagesIcons.Icon,
+      subject: SurfacePolaris.Icon,
       catalogue: SurfacePolaris.Catalogue,
       title: "Icon with Backdrop",
       height: "70px",
@@ -33,7 +33,7 @@ defmodule SurfacePolaris.Catalogue.Icon do
 
   defmodule AbandonedCartMajorCritical do
     use Surface.Catalogue.Example,
-      subject: SurfacePolaris.ImagesIcons.Icon,
+      subject: SurfacePolaris.Icon,
       catalogue: SurfacePolaris.Catalogue,
       title: "Icon Critical",
       height: "70px",

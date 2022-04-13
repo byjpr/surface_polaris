@@ -1,4 +1,4 @@
-defmodule SurfacePolaris.Feedback.Spinner do
+defmodule SurfacePolaris.Spinner do
   @moduledoc """
   Spinners are used to notify merchants that their
   action is being processed. For loading states,

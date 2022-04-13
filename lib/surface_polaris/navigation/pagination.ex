@@ -1,4 +1,4 @@
-defmodule SurfacePolaris.Structure.Pagination do
+defmodule SurfacePolaris.Pagination do
   use Surface.Component
 
   slot(default)

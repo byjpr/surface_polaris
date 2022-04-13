@@ -1,9 +1,9 @@
-defmodule SurfacePolaris.Structure.Card.Section do
+defmodule SurfacePolaris.Card.Section do
   @moduledoc """
   """
 
   use Surface.Component
-  alias SurfacePolaris.Structure.Card.Section
+  alias SurfacePolaris.Card.Section
 
   @doc "Title content for the card"
   prop(title, :string)

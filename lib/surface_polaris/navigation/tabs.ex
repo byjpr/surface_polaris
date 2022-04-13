@@ -1,4 +1,4 @@
-defmodule SurfacePolaris.Structure.Tabs do
+defmodule SurfacePolaris.Tabs do
   use Surface.Component
 
   slot(default)

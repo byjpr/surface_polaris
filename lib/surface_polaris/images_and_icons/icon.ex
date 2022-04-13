@@ -1,4 +1,4 @@
-defmodule SurfacePolaris.ImagesIcons.Icon do
+defmodule SurfacePolaris.Icon do
   @moduledoc """
   Icons are used to visually communicate core parts of the
   product and available actions. They can act as wayfinding

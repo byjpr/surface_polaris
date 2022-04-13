@@ -3,7 +3,7 @@ defmodule SurfacePolaris.Catalogue.Banner do
   """
   defmodule BasicBanner do
     use Surface.Catalogue.Example,
-      subject: SurfacePolaris.Feedback.Banner,
+      subject: SurfacePolaris.Banner,
       catalogue: SurfacePolaris.Catalogue,
       title: "Default banners",
       height: "150px",
@@ -20,7 +20,7 @@ defmodule SurfacePolaris.Catalogue.Banner do
 
   defmodule BannerFooterCTA do
     use Surface.Catalogue.Example,
-      subject: SurfacePolaris.Feedback.Banner,
+      subject: SurfacePolaris.Banner,
       catalogue: SurfacePolaris.Catalogue,
       title: "Banner with footer call-to-action",
       height: "250px",
@@ -33,11 +33,11 @@ defmodule SurfacePolaris.Catalogue.Banner do
         status="warning"
         action={[
           content: "Edit variant weights",
-          url: "http://localhost:4000/components/SurfacePolaris.Feedback.Banner/example"
+          url: "http://localhost:4000/components/SurfacePolaris.Banner/example"
         ]}
         secondaryAction={[
           content: "Edit variant weights",
-          url: "http://localhost:4000/components/SurfacePolaris.Feedback.Banner/example"
+          url: "http://localhost:4000/components/SurfacePolaris.Banner/example"
         ]}
       >
         <p>

@@ -1,4 +1,4 @@
-defmodule SurfacePolaris.TitlesText.DisplayText do
+defmodule SurfacePolaris.DisplayText do
   @moduledoc """
   Display styles make a bold visual statement.
   Use them to create impact when the main goal is visual storytelling.

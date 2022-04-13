@@ -1,4 +1,4 @@
-defmodule SurfacePolaris.ImagesIcons.Badge do
+defmodule SurfacePolaris.Badge do
   @moduledoc """
   Badges are used to inform merchants of the status of an object or of an action that’s been taken.
   """

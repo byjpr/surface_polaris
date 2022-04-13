@@ -1,4 +1,4 @@
-defmodule SurfacePolaris.TitlesText.TextStyle do
+defmodule SurfacePolaris.TextStyle do
   @moduledoc """
   Text style enhances text with additional visual meaning.
   For example, using subdued text to de-emphasize it from its surrounding text.

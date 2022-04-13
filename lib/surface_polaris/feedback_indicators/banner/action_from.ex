@@ -1,4 +1,4 @@
-defmodule SurfacePolaris.Feedback.Banner.ActionFrom do
+defmodule SurfacePolaris.Banner.ActionFrom do
   use Surface.Component
 
   @doc """

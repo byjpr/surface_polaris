@@ -1,4 +1,4 @@
-defmodule SurfacePolaris.Structure.Card do
+defmodule SurfacePolaris.Card do
   @moduledoc """
   Cards are used to group similar concepts and tasks together to make Shopify easier for merchants to scan, read, and get things done.
   """
@@ -16,12 +16,12 @@ defmodule SurfacePolaris.Structure.Card do
   def render(assigns) do
     ~F"""
     <div class="Polaris-Card">
-      <SurfacePolaris.Structure.Card.Header :if={@title} title={@title} />
+      <SurfacePolaris.Card.Header :if={@title} title={@title} />
 
       <!-- Default slot -->
-      <SurfacePolaris.Structure.Card.Section :if={@sectioned}>
+      <SurfacePolaris.Card.Section :if={@sectioned}>
         <#slot />
-      </SurfacePolaris.Structure.Card.Section>
+      </SurfacePolaris.Card.Section>
 
       <!-- Non sectioned slot -->
       <#slot :if={!@sectioned} />

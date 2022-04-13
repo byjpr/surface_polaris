@@ -3,7 +3,7 @@ defmodule SurfacePolaris.Catalogue.Link do
   """
   defmodule BasicButton do
     use Surface.Catalogue.Example,
-      subject: SurfacePolaris.Navigation.Link,
+      subject: SurfacePolaris.Link,
       catalogue: SurfacePolaris.Catalogue,
       title: "Label",
       height: "70px",
@@ -18,7 +18,7 @@ defmodule SurfacePolaris.Catalogue.Link do
 
   defmodule OutlineButton do
     use Surface.Catalogue.Example,
-      subject: SurfacePolaris.Navigation.Link,
+      subject: SurfacePolaris.Link,
       catalogue: SurfacePolaris.Catalogue,
       title: "Label",
       height: "70px",

@@ -1,4 +1,4 @@
-defmodule SurfacePolaris.Feedback.Banner.Actions do
+defmodule SurfacePolaris.Banner.Actions do
   @moduledoc """
   """
 

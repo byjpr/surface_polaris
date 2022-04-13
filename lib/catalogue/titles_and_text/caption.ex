@@ -2,7 +2,7 @@ defmodule SurfacePolaris.Catalogue.Caption do
   @moduledoc """
   """
   use Surface.Catalogue.Example,
-    subject: SurfacePolaris.TitlesText.Caption,
+    subject: SurfacePolaris.Caption,
     catalogue: SurfacePolaris.Catalogue,
     title: "Default caption",
     height: "90px",

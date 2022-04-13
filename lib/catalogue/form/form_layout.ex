@@ -4,7 +4,7 @@ defmodule SurfacePolaris.Catalogue.FormLayout do
 
   defmodule Default do
     use Surface.Catalogue.Example,
-      subject: SurfacePolaris.Form.FormLayout,
+      subject: SurfacePolaris.FormLayout,
       catalogue: SurfacePolaris.Catalogue,
       title: "Default behavior",
       height: "140px",
@@ -39,7 +39,7 @@ defmodule SurfacePolaris.Catalogue.FormLayout do
 
   defmodule CondensedGroup do
     use Surface.Catalogue.Example,
-      subject: SurfacePolaris.Form.FormLayout,
+      subject: SurfacePolaris.FormLayout,
       catalogue: SurfacePolaris.Catalogue,
       title: "Condensed Group",
       height: "140px",
@@ -76,7 +76,7 @@ defmodule SurfacePolaris.Catalogue.FormLayout do
 
   defmodule Group do
     use Surface.Catalogue.Example,
-      subject: SurfacePolaris.Form.FormLayout,
+      subject: SurfacePolaris.FormLayout,
       catalogue: SurfacePolaris.Catalogue,
       title: "Group",
       height: "140px",

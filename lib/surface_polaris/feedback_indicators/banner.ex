@@ -1,4 +1,4 @@
-defmodule SurfacePolaris.Feedback.Banner do
+defmodule SurfacePolaris.Banner do
   @moduledoc """
   Informs merchants about important changes or persistent conditions.
   Use this component if you need to communicate to merchants in a prominent way.
@@ -8,7 +8,7 @@ defmodule SurfacePolaris.Feedback.Banner do
   use Surface.Component
 
   alias SurfacePolaris.ButtonGroup
-  alias SurfacePolaris.Feedback.Banner
+  alias SurfacePolaris.Banner
 
   @module_name "Polaris-Banner"
 
@@ -46,7 +46,7 @@ defmodule SurfacePolaris.Feedback.Banner do
 
       <Banner.ContentWrapper>
         <Banner.Heading>
-          <SurfacePolaris.TitlesText.Heading>{@title}</SurfacePolaris.TitlesText.Heading>
+          <SurfacePolaris.Heading>{@title}</SurfacePolaris.Heading>
         </Banner.Heading>
         <Banner.Content>
           <#slot />

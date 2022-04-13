@@ -4,14 +4,14 @@ defmodule SurfacePolaris.Catalogue.Layout do
 
   defmodule OneColumn do
     use Surface.Catalogue.Example,
-      subject: SurfacePolaris.Structure.Layout,
+      subject: SurfacePolaris.Layout,
       catalogue: SurfacePolaris.Catalogue,
       title: "One-column layout",
       height: "140px",
       container: {:div, class: "temporary-workaround"},
       direction: "vertical"
 
-    alias SurfacePolaris.Structure.Card
+    alias SurfacePolaris.Card
 
     def render(assigns) do
       ~F"""
@@ -28,14 +28,14 @@ defmodule SurfacePolaris.Catalogue.Layout do
 
   defmodule TwoPrimarySecondary do
     use Surface.Catalogue.Example,
-      subject: SurfacePolaris.Structure.Layout,
+      subject: SurfacePolaris.Layout,
       catalogue: SurfacePolaris.Catalogue,
       title: "Two columns with primary and secondary widths",
       height: "140px",
       container: {:div, class: "temporary-workaround"},
       direction: "vertical"
 
-    alias SurfacePolaris.Structure.Card
+    alias SurfacePolaris.Card
 
     def render(assigns) do
       ~F"""
@@ -57,15 +57,15 @@ defmodule SurfacePolaris.Catalogue.Layout do
 
   defmodule TwoEqual do
     use Surface.Catalogue.Example,
-      subject: SurfacePolaris.Structure.Layout,
+      subject: SurfacePolaris.Layout,
       catalogue: SurfacePolaris.Catalogue,
       title: "Two columns with equal width",
       height: "220px",
       container: {:div, class: "temporary-workaround"},
       direction: "vertical"
 
-    alias SurfacePolaris.Structure.Card
-    alias SurfacePolaris.TitlesText.TextStyle
+    alias SurfacePolaris.Card
+    alias SurfacePolaris.TextStyle
 
     def render(assigns) do
       ~F"""
@@ -97,15 +97,15 @@ defmodule SurfacePolaris.Catalogue.Layout do
 
   defmodule ThreeEqual do
     use Surface.Catalogue.Example,
-      subject: SurfacePolaris.Structure.Layout,
+      subject: SurfacePolaris.Layout,
       catalogue: SurfacePolaris.Catalogue,
       title: "Three columns with equal width",
       height: "220px",
       container: {:div, class: "temporary-workaround"},
       direction: "vertical"
 
-    alias SurfacePolaris.Structure.Card
-    alias SurfacePolaris.TitlesText.TextStyle
+    alias SurfacePolaris.Card
+    alias SurfacePolaris.TextStyle
 
     def render(assigns) do
       ~F"""
@@ -147,15 +147,15 @@ defmodule SurfacePolaris.Catalogue.Layout do
 
   defmodule AnnotatedLayout do
     use Surface.Catalogue.Example,
-      subject: SurfacePolaris.Structure.Layout,
+      subject: SurfacePolaris.Layout,
       catalogue: SurfacePolaris.Catalogue,
       title: "Annotated layout",
       height: "420px",
       container: {:div, class: "temporary-workaround"},
       direction: "vertical"
 
-    alias SurfacePolaris.Structure.Card
-    alias SurfacePolaris.TitlesText.TextStyle
+    alias SurfacePolaris.Card
+    alias SurfacePolaris.TextStyle
 
     def render(assigns) do
       ~F"""

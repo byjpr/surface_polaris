@@ -4,7 +4,7 @@ defmodule SurfacePolaris.Catalogue.Badge do
 
   defmodule BasicBadge do
     use Surface.Catalogue.Example,
-      subject: SurfacePolaris.ImagesIcons.Badge,
+      subject: SurfacePolaris.Badge,
       catalogue: SurfacePolaris.Catalogue,
       title: "Default badge",
       height: "70px",
@@ -19,7 +19,7 @@ defmodule SurfacePolaris.Catalogue.Badge do
 
   defmodule InfoBadge do
     use Surface.Catalogue.Example,
-      subject: SurfacePolaris.ImagesIcons.Badge,
+      subject: SurfacePolaris.Badge,
       catalogue: SurfacePolaris.Catalogue,
       title: "Informational badge",
       height: "70px",
@@ -34,7 +34,7 @@ defmodule SurfacePolaris.Catalogue.Badge do
 
   defmodule SuccessBadge do
     use Surface.Catalogue.Example,
-      subject: SurfacePolaris.ImagesIcons.Badge,
+      subject: SurfacePolaris.Badge,
       catalogue: SurfacePolaris.Catalogue,
       title: "Success badge",
       height: "70px",
@@ -49,7 +49,7 @@ defmodule SurfacePolaris.Catalogue.Badge do
 
   defmodule AttentionBadge do
     use Surface.Catalogue.Example,
-      subject: SurfacePolaris.ImagesIcons.Badge,
+      subject: SurfacePolaris.Badge,
       catalogue: SurfacePolaris.Catalogue,
       title: "Attention badge",
       height: "70px",
@@ -64,7 +64,7 @@ defmodule SurfacePolaris.Catalogue.Badge do
 
   defmodule WarningBadge do
     use Surface.Catalogue.Example,
-      subject: SurfacePolaris.ImagesIcons.Badge,
+      subject: SurfacePolaris.Badge,
       catalogue: SurfacePolaris.Catalogue,
       title: "Warning badge",
       height: "70px",
@@ -79,7 +79,7 @@ defmodule SurfacePolaris.Catalogue.Badge do
 
   defmodule CriticalBadge do
     use Surface.Catalogue.Example,
-      subject: SurfacePolaris.ImagesIcons.Badge,
+      subject: SurfacePolaris.Badge,
       catalogue: SurfacePolaris.Catalogue,
       title: "critical badge",
       height: "70px",
@@ -94,7 +94,7 @@ defmodule SurfacePolaris.Catalogue.Badge do
 
   defmodule IncompleteBadge do
     use Surface.Catalogue.Example,
-      subject: SurfacePolaris.ImagesIcons.Badge,
+      subject: SurfacePolaris.Badge,
       catalogue: SurfacePolaris.Catalogue,
       title: "incomplete badge",
       height: "70px",
@@ -109,7 +109,7 @@ defmodule SurfacePolaris.Catalogue.Badge do
 
   defmodule PartiallyCompleteBadge do
     use Surface.Catalogue.Example,
-      subject: SurfacePolaris.ImagesIcons.Badge,
+      subject: SurfacePolaris.Badge,
       catalogue: SurfacePolaris.Catalogue,
       title: "Partially complete badge",
       height: "70px",

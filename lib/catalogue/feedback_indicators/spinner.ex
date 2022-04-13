@@ -4,7 +4,7 @@ defmodule SurfacePolaris.Catalogue.Spinner do
   """
   defmodule BasicSpinner do
     use Surface.Catalogue.Example,
-      subject: SurfacePolaris.Feedback.Spinner,
+      subject: SurfacePolaris.Spinner,
       catalogue: SurfacePolaris.Catalogue,
       title: "Basic spinner",
       height: "90px",
@@ -19,7 +19,7 @@ defmodule SurfacePolaris.Catalogue.Spinner do
 
   defmodule SmallSpinner do
     use Surface.Catalogue.Example,
-      subject: SurfacePolaris.Feedback.Spinner,
+      subject: SurfacePolaris.Spinner,
       catalogue: SurfacePolaris.Catalogue,
       title: "Small spinner",
       height: "90px",
@@ -34,7 +34,7 @@ defmodule SurfacePolaris.Catalogue.Spinner do
 
   defmodule LargeSpinner do
     use Surface.Catalogue.Example,
-      subject: SurfacePolaris.Feedback.Spinner,
+      subject: SurfacePolaris.Spinner,
       catalogue: SurfacePolaris.Catalogue,
       title: "Large spinner",
       height: "90px",

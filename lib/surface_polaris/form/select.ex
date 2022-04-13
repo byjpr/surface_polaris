@@ -1,4 +1,4 @@
-defmodule SurfacePolaris.Form.Select do
+defmodule SurfacePolaris.Select do
   @moduledoc """
   Select lets merchants choose one option from an options menu.
   Consider select when you have 4 or more options, to avoid cluttering the interface.
@@ -9,8 +9,8 @@ defmodule SurfacePolaris.Form.Select do
   """
 
   use Surface.Component
-  use SurfacePolaris.Form.WithLabels
-  use SurfacePolaris.Form.WithErrors
+  use SurfacePolaris.WithLabels
+  use SurfacePolaris.WithErrors
 
   prop(options, :list)
 
@@ -45,7 +45,7 @@ defmodule SurfacePolaris.Form.Select do
         <div class="Polaris-Select__Backdrop"></div>
       </div>
       <div class="Polaris-Labelled__Error">
-        <SurfacePolaris.Form.InlineError fieldID={id_from_label(@label)} message={@error} />
+        <SurfacePolaris.InlineError fieldID={id_from_label(@label)} message={@error} />
       </div>
     </div>
     """

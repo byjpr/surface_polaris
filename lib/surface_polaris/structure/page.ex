@@ -1,4 +1,4 @@
-defmodule SurfacePolaris.Structure.Page do
+defmodule SurfacePolaris.Page do
   @moduledoc """
   The layout component is used to create the main layout on a page.
   Layouts sections come in three main configurations: one-column, two-column, and annotated.
@@ -68,11 +68,11 @@ defmodule SurfacePolaris.Structure.Page do
   def render(assigns) do
     ~F"""
     <div class={"Polaris-Page", "Polaris-Page--fullWidth": @fullWidth}>
-      <SurfacePolaris.Structure.Page.Header {=@breadcrumbs} {=@title} {=@titleMetadata} {=@subtitle} {=@primaryAction} />
+      <SurfacePolaris.Page.Header {=@breadcrumbs} {=@title} {=@titleMetadata} {=@subtitle} {=@primaryAction} />
 
-      <SurfacePolaris.Structure.Page.Content>
+      <SurfacePolaris.Page.Content>
         <#slot />
-      </SurfacePolaris.Structure.Page.Content>
+      </SurfacePolaris.Page.Content>
     </div>
     """
   end

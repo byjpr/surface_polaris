@@ -1,11 +1,11 @@
-defmodule SurfacePolaris.Navigation.FooterHelp do
+defmodule SurfacePolaris.FooterHelp do
   @moduledoc """
   Footer help is used to refer merchants to more
   information related to the product or feature they’re using.
   """
 
   use Surface.Component
-  alias SurfacePolaris.ImagesIcons.Icon
+  alias SurfacePolaris.Icon
 
   slot(default)
 

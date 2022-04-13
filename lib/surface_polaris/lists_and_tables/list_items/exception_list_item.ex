@@ -1,4 +1,4 @@
-defmodule SurfacePolaris.ListTables.ExceptionList.Item do
+defmodule SurfacePolaris.ExceptionList.Item do
   @moduledoc """
   Caption text size is smaller than the recommended size for general reading.
   On web, it should be used only in a graph or as a timestamp for a list item.
@@ -31,7 +31,7 @@ defmodule SurfacePolaris.ListTables.ExceptionList.Item do
       "Polaris-ExceptionList--statusCritical": @status == "critical",
       "Polaris-ExceptionList--statusWarning": @status == "warning"
     }>
-      <span class="Polaris-ExceptionList__Icon" :if={@icon}><SurfacePolaris.ImagesIcons.Icon source={@icon} /></span>
+      <span class="Polaris-ExceptionList__Icon" :if={@icon}><SurfacePolaris.Icon source={@icon} /></span>
       <span class="Polaris-ExceptionList__Title" :if={@title}>{@title}</span>
       <span class="Polaris-ExceptionList__Description">{@description}</span>
     </li>

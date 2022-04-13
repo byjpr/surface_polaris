@@ -1,4 +1,4 @@
-defmodule SurfacePolaris.Form.FormLayout.Group do
+defmodule SurfacePolaris.FormLayout.Group do
   @moduledoc """
   Use field groups to arrange multiple fields in a row.
 
@@ -14,7 +14,7 @@ defmodule SurfacePolaris.Form.FormLayout.Group do
 
   prop(condensed, :boolean, default: false)
 
-  slot default
+  slot(default)
 
   def render(assigns) do
     ~F"""

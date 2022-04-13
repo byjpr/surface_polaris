@@ -1,12 +1,12 @@
-defmodule SurfacePolaris.Form.TextField do
+defmodule SurfacePolaris.TextField do
   @moduledoc """
   A text field is an input field that merchants can type into.
   It has a range of options and supports several text formats including numbers.
   """
 
   use Surface.Component
-  use SurfacePolaris.Form.WithLabels
-  use SurfacePolaris.Form.WithErrors
+  use SurfacePolaris.WithLabels
+  use SurfacePolaris.WithErrors
 
   @doc "Determine type of input"
   prop(type, :string,
@@ -98,7 +98,7 @@ defmodule SurfacePolaris.Form.TextField do
         <div class="Polaris-TextField__Backdrop"></div>
       </div>
       <div class="Polaris-Labelled__Error">
-        <SurfacePolaris.Form.InlineError fieldID={id_from_label(@label)} message={@error} />
+        <SurfacePolaris.InlineError fieldID={id_from_label(@label)} message={@error} />
       </div>
     </div>
     """

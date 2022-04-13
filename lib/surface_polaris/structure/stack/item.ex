@@ -1,4 +1,4 @@
-defmodule SurfacePolaris.Structure.Stack.Item do
+defmodule SurfacePolaris.Stack.Item do
   @moduledoc """
   The stack component will treat multiple elements wrapped in a stack item component as one item. By default, each individual element is treated as one stack item. Use the fill prop on a single stack item component to make it fill the rest of the available horizontal space. See the “Stack where a single item fills the remaining space” example.
   """

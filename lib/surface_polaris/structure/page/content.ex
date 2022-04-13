@@ -1,4 +1,4 @@
-defmodule SurfacePolaris.Structure.Page.Content do
+defmodule SurfacePolaris.Page.Content do
   use Surface.Component
 
   slot(default)

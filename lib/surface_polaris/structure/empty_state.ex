@@ -1,4 +1,4 @@
-defmodule SurfacePolaris.Structure.EmptyState do
+defmodule SurfacePolaris.EmptyState do
   @moduledoc """
   Empty states are used when a list, table, or chart has no items or data to show. This is an opportunity to provide explanation or guidance to help merchants progress. The empty state component is intended for use when a full page in the admin is empty, and not for individual elements or areas in the interface.
   """

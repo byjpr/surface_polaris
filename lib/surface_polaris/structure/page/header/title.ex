@@ -1,4 +1,4 @@
-defmodule SurfacePolaris.Structure.Page.Title do
+defmodule SurfacePolaris.Page.Title do
   use Surface.Component
 
   @doc "Additional meta data"

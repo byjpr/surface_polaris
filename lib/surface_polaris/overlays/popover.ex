@@ -1,4 +1,4 @@
-defmodule SurfacePolaris.Overlays.Popover do
+defmodule SurfacePolaris.Popover do
   @moduledoc """
   """
 

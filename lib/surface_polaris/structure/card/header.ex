@@ -1,4 +1,4 @@
-defmodule SurfacePolaris.Structure.Card.Header do
+defmodule SurfacePolaris.Card.Header do
   @moduledoc """
   """
 
@@ -10,9 +10,9 @@ defmodule SurfacePolaris.Structure.Card.Header do
   def render(assigns) do
     ~F"""
     <div class="Polaris-Card__Header">
-      <SurfacePolaris.TitlesText.Heading element="h2">
+      <SurfacePolaris.Heading element="h2">
         {@title}
-      </SurfacePolaris.TitlesText.Heading>
+      </SurfacePolaris.Heading>
     </div>
     """
   end

@@ -1,4 +1,4 @@
-defmodule SurfacePolaris.Form.InlineError do
+defmodule SurfacePolaris.InlineError do
   @moduledoc """
   Inline errors are brief, in-context messages that tell
   merchants something went wrong with a single or group
