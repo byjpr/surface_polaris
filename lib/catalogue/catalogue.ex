@@ -1,4 +1,4 @@
-defmodule SurfacePolaris.Catalogue do
+defmodule Polaris.Catalogue do
   @moduledoc """
   Catalogue implementation for SurfaceBulma.
 

@@ -12,7 +12,7 @@ end
 Surface.Catalogue.Server.start(
   live_reload: [
     patterns: [
-      ~r"lib/surface_polaris/*/.*(ex)$"
+      ~r"lib/polaris/*/.*(ex)$"
     ]
   ]
 )

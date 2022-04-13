@@ -1,4 +1,4 @@
-defmodule SurfacePolaris.IconTest do
+defmodule Polaris.IconTest do
   use ExUnit.Case, async: true
   use Temple
   use ExPolaris.Support.Utils
@@ -6,7 +6,7 @@ defmodule SurfacePolaris.IconTest do
   test "checks the html output of Icon component" do
     result =
       temple do
-        c(SurfacePolaris.Icon, source: "wifi_major")
+        c(Polaris.Icon, source: "wifi_major")
       end
 
     assert no_nlws(evaluate_template(result)) ==

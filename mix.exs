@@ -1,4 +1,4 @@
-defmodule SurfacePolaris.MixProject do
+defmodule Polaris.MixProject do
   use Mix.Project
 
   @source_url "https://github.com/surface-ui/surface_bulma"
@@ -6,7 +6,7 @@ defmodule SurfacePolaris.MixProject do
 
   def project do
     [
-      app: :surface_polaris,
+      app: :polaris,
       description: "A set of simple Surface components based on Polaris.",
       version: @version,
       elixir: "~> 1.9",
@@ -19,21 +19,21 @@ defmodule SurfacePolaris.MixProject do
       docs: [
         groups_for_modules: [
           Actions: [
-            ~r/SurfacePolaris.Actions.(Button).*/
+            ~r/Polaris.(Button).*/
           ],
           "Titles and text": [
-            ~r/SurfacePolaris.TitlesText.(Caption|DisplayText|Heading|Subheading|TextContainer|TextStyle|VisuallyHidden).*/
+            ~r/Polaris.(Caption|DisplayText|Heading|Subheading|TextContainer|TextStyle|VisuallyHidden).*/
           ],
-          Navigation: [~r/SurfacePolaris.Navigation.(FooterHelp|Link).*/],
-          "Images and icons": [~r/SurfacePolaris.ImagesIcons.(Badge|Icon|KeyboardKey).*/],
-          "Feedback indicators": [~r/SurfacePolaris.Feedback.Spinner*/]
+          Navigation: [~r/Polaris.(FooterHelp|Link).*/],
+          "Images and icons": [~r/Polaris.(Badge|Icon|KeyboardKey).*/],
+          "Feedback indicators": [~r/Polaris.Spinner*/]
         ],
         nest_modules_by_prefix: [
-          SurfacePolaris.Actions,
-          SurfacePolaris.Feedback,
-          SurfacePolaris.ImagesIcons,
-          SurfacePolaris.Navigation,
-          SurfacePolaris.TitlesText
+          Polaris,
+          Polaris,
+          Polaris,
+          Polaris,
+          Polaris
         ]
       ]
     ]

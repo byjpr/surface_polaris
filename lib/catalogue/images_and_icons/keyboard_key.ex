@@ -1,10 +1,10 @@
-defmodule SurfacePolaris.Catalogue.KeyboardKey do
+defmodule Polaris.Catalogue.KeyboardKey do
   @moduledoc """
   """
   defmodule Default do
     use Surface.Catalogue.Example,
-      subject: SurfacePolaris.KeyboardKey,
-      catalogue: SurfacePolaris.Catalogue,
+      subject: Polaris.KeyboardKey,
+      catalogue: Polaris.Catalogue,
       title: "KeyboardKey",
       height: "70px",
       container: {:div, class: "temporary-workaround"}

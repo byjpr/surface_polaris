@@ -1,11 +1,11 @@
-defmodule SurfacePolaris.Catalogue.InlineError do
+defmodule Polaris.Catalogue.InlineError do
   @moduledoc """
   """
 
   defmodule Default do
     use Surface.Catalogue.Example,
-      subject: SurfacePolaris.InlineError,
-      catalogue: SurfacePolaris.Catalogue,
+      subject: Polaris.InlineError,
+      catalogue: Polaris.Catalogue,
       title: "Default behavior",
       height: "140px",
       container: {:div, class: "temporary-workaround"},
@@ -24,8 +24,8 @@ defmodule SurfacePolaris.Catalogue.InlineError do
 
   defmodule NoMessage do
     use Surface.Catalogue.Example,
-      subject: SurfacePolaris.InlineError,
-      catalogue: SurfacePolaris.Catalogue,
+      subject: Polaris.InlineError,
+      catalogue: Polaris.Catalogue,
       title: "No Message",
       height: "140px",
       container: {:div, class: "temporary-workaround"},
@@ -44,8 +44,8 @@ defmodule SurfacePolaris.Catalogue.InlineError do
 
   defmodule EmptyMessage do
     use Surface.Catalogue.Example,
-      subject: SurfacePolaris.InlineError,
-      catalogue: SurfacePolaris.Catalogue,
+      subject: Polaris.InlineError,
+      catalogue: Polaris.Catalogue,
       title: "Empty Message",
       height: "140px",
       container: {:div, class: "temporary-workaround"},
@@ -64,8 +64,8 @@ defmodule SurfacePolaris.Catalogue.InlineError do
 
   defmodule NoFieldID do
     use Surface.Catalogue.Example,
-      subject: SurfacePolaris.InlineError,
-      catalogue: SurfacePolaris.Catalogue,
+      subject: Polaris.InlineError,
+      catalogue: Polaris.Catalogue,
       title: "No `fieldID`",
       height: "140px",
       container: {:div, class: "temporary-workaround"},

@@ -1,10 +1,10 @@
-defmodule SurfacePolaris.Catalogue.Button do
+defmodule Polaris.Catalogue.Button do
   @moduledoc """
   """
   defmodule BasicButton do
     use Surface.Catalogue.Example,
-      subject: SurfacePolaris.Button,
-      catalogue: SurfacePolaris.Catalogue,
+      subject: Polaris.Button,
+      catalogue: Polaris.Catalogue,
       title: "Basic button",
       height: "90px",
       container: {:div, class: "temporary-workaround"}
@@ -18,8 +18,8 @@ defmodule SurfacePolaris.Catalogue.Button do
 
   defmodule OutlineButton do
     use Surface.Catalogue.Example,
-      subject: SurfacePolaris.Button,
-      catalogue: SurfacePolaris.Catalogue,
+      subject: Polaris.Button,
+      catalogue: Polaris.Catalogue,
       title: "Outline button",
       height: "90px",
       container: {:div, class: "temporary-workaround"}
@@ -33,8 +33,8 @@ defmodule SurfacePolaris.Catalogue.Button do
 
   defmodule PlainButton do
     use Surface.Catalogue.Example,
-      subject: SurfacePolaris.Button,
-      catalogue: SurfacePolaris.Catalogue,
+      subject: Polaris.Button,
+      catalogue: Polaris.Catalogue,
       title: "Plain button",
       height: "90px",
       container: {:div, class: "temporary-workaround"}
@@ -48,8 +48,8 @@ defmodule SurfacePolaris.Catalogue.Button do
 
   defmodule PrimaryButton do
     use Surface.Catalogue.Example,
-      subject: SurfacePolaris.Button,
-      catalogue: SurfacePolaris.Catalogue,
+      subject: Polaris.Button,
+      catalogue: Polaris.Catalogue,
       title: "Primary button",
       height: "90px",
       container: {:div, class: "temporary-workaround"}

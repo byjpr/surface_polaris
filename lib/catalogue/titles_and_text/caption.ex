@@ -1,9 +1,9 @@
-defmodule SurfacePolaris.Catalogue.Caption do
+defmodule Polaris.Catalogue.Caption do
   @moduledoc """
   """
   use Surface.Catalogue.Example,
-    subject: SurfacePolaris.Caption,
-    catalogue: SurfacePolaris.Catalogue,
+    subject: Polaris.Caption,
+    catalogue: Polaris.Catalogue,
     title: "Default caption",
     height: "90px",
     container: {:div, class: "temporary-workaround"}

@@ -1,15 +1,15 @@
-defmodule SurfacePolaris.Catalogue.FooterHelp do
+defmodule Polaris.Catalogue.FooterHelp do
   @moduledoc """
   """
   defmodule BasicButton do
     use Surface.Catalogue.Example,
-      subject: SurfacePolaris.FooterHelp,
-      catalogue: SurfacePolaris.Catalogue,
+      subject: Polaris.FooterHelp,
+      catalogue: Polaris.Catalogue,
       title: "Label",
       height: "140px",
       container: {:div, class: "temporary-workaround"}
 
-    alias SurfacePolaris.Link
+    alias Polaris.Link
 
     def render(assigns) do
       ~F"""

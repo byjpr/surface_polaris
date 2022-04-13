@@ -1,11 +1,11 @@
-defmodule SurfacePolaris.Catalogue.Tag do
+defmodule Polaris.Catalogue.Tag do
   @moduledoc """
   """
 
   defmodule Default do
     use Surface.Catalogue.Example,
-      subject: SurfacePolaris.Tag,
-      catalogue: SurfacePolaris.Catalogue,
+      subject: Polaris.Tag,
+      catalogue: Polaris.Catalogue,
       title: "Default behavior",
       height: "140px",
       container: {:div, class: "temporary-workaround"},
@@ -20,14 +20,14 @@ defmodule SurfacePolaris.Catalogue.Tag do
 
   defmodule Multiple do
     use Surface.Catalogue.Example,
-      subject: SurfacePolaris.Tag,
-      catalogue: SurfacePolaris.Catalogue,
+      subject: Polaris.Tag,
+      catalogue: Polaris.Catalogue,
       title: "Multiple tags",
       height: "140px",
       container: {:div, class: "temporary-workaround"},
       direction: "vertical"
 
-    alias SurfacePolaris.Stack
+    alias Polaris.Stack
 
     def render(assigns) do
       ~F"""

@@ -1,17 +1,17 @@
-defmodule SurfacePolaris.Catalogue.FormLayout do
+defmodule Polaris.Catalogue.FormLayout do
   @moduledoc """
   """
 
   defmodule Default do
     use Surface.Catalogue.Example,
-      subject: SurfacePolaris.FormLayout,
-      catalogue: SurfacePolaris.Catalogue,
+      subject: Polaris.FormLayout,
+      catalogue: Polaris.Catalogue,
       title: "Default behavior",
       height: "140px",
       container: {:div, class: "temporary-workaround"},
       direction: "vertical"
 
-    alias SurfacePolaris.{Structure, Form}
+    alias Polaris.{Structure, Form}
 
     @moduledoc """
     Use to stack form fields vertically, which makes them easier to scan and complete.
@@ -39,14 +39,14 @@ defmodule SurfacePolaris.Catalogue.FormLayout do
 
   defmodule CondensedGroup do
     use Surface.Catalogue.Example,
-      subject: SurfacePolaris.FormLayout,
-      catalogue: SurfacePolaris.Catalogue,
+      subject: Polaris.FormLayout,
+      catalogue: Polaris.Catalogue,
       title: "Condensed Group",
       height: "140px",
       container: {:div, class: "temporary-workaround"},
       direction: "vertical"
 
-    alias SurfacePolaris.{Structure, Form}
+    alias Polaris.{Structure, Form}
 
     @moduledoc """
     For very short inputs, the width of the inputs may be reduced in order to fit more fields in the row.
@@ -76,14 +76,14 @@ defmodule SurfacePolaris.Catalogue.FormLayout do
 
   defmodule Group do
     use Surface.Catalogue.Example,
-      subject: SurfacePolaris.FormLayout,
-      catalogue: SurfacePolaris.Catalogue,
+      subject: Polaris.FormLayout,
+      catalogue: Polaris.Catalogue,
       title: "Group",
       height: "140px",
       container: {:div, class: "temporary-workaround"},
       direction: "vertical"
 
-    alias SurfacePolaris.{Structure, Form}
+    alias Polaris.{Structure, Form}
 
     @moduledoc """
     """

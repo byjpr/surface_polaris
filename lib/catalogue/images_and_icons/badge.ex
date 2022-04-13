@@ -1,11 +1,11 @@
-defmodule SurfacePolaris.Catalogue.Badge do
+defmodule Polaris.Catalogue.Badge do
   @moduledoc """
   """
 
   defmodule BasicBadge do
     use Surface.Catalogue.Example,
-      subject: SurfacePolaris.Badge,
-      catalogue: SurfacePolaris.Catalogue,
+      subject: Polaris.Badge,
+      catalogue: Polaris.Catalogue,
       title: "Default badge",
       height: "70px",
       container: {:div, class: "temporary-workaround"}
@@ -19,8 +19,8 @@ defmodule SurfacePolaris.Catalogue.Badge do
 
   defmodule InfoBadge do
     use Surface.Catalogue.Example,
-      subject: SurfacePolaris.Badge,
-      catalogue: SurfacePolaris.Catalogue,
+      subject: Polaris.Badge,
+      catalogue: Polaris.Catalogue,
       title: "Informational badge",
       height: "70px",
       container: {:div, class: "temporary-workaround"}
@@ -34,8 +34,8 @@ defmodule SurfacePolaris.Catalogue.Badge do
 
   defmodule SuccessBadge do
     use Surface.Catalogue.Example,
-      subject: SurfacePolaris.Badge,
-      catalogue: SurfacePolaris.Catalogue,
+      subject: Polaris.Badge,
+      catalogue: Polaris.Catalogue,
       title: "Success badge",
       height: "70px",
       container: {:div, class: "temporary-workaround"}
@@ -49,8 +49,8 @@ defmodule SurfacePolaris.Catalogue.Badge do
 
   defmodule AttentionBadge do
     use Surface.Catalogue.Example,
-      subject: SurfacePolaris.Badge,
-      catalogue: SurfacePolaris.Catalogue,
+      subject: Polaris.Badge,
+      catalogue: Polaris.Catalogue,
       title: "Attention badge",
       height: "70px",
       container: {:div, class: "temporary-workaround"}
@@ -64,8 +64,8 @@ defmodule SurfacePolaris.Catalogue.Badge do
 
   defmodule WarningBadge do
     use Surface.Catalogue.Example,
-      subject: SurfacePolaris.Badge,
-      catalogue: SurfacePolaris.Catalogue,
+      subject: Polaris.Badge,
+      catalogue: Polaris.Catalogue,
       title: "Warning badge",
       height: "70px",
       container: {:div, class: "temporary-workaround"}
@@ -79,8 +79,8 @@ defmodule SurfacePolaris.Catalogue.Badge do
 
   defmodule CriticalBadge do
     use Surface.Catalogue.Example,
-      subject: SurfacePolaris.Badge,
-      catalogue: SurfacePolaris.Catalogue,
+      subject: Polaris.Badge,
+      catalogue: Polaris.Catalogue,
       title: "critical badge",
       height: "70px",
       container: {:div, class: "temporary-workaround"}
@@ -94,8 +94,8 @@ defmodule SurfacePolaris.Catalogue.Badge do
 
   defmodule IncompleteBadge do
     use Surface.Catalogue.Example,
-      subject: SurfacePolaris.Badge,
-      catalogue: SurfacePolaris.Catalogue,
+      subject: Polaris.Badge,
+      catalogue: Polaris.Catalogue,
       title: "incomplete badge",
       height: "70px",
       container: {:div, class: "temporary-workaround"}
@@ -109,8 +109,8 @@ defmodule SurfacePolaris.Catalogue.Badge do
 
   defmodule PartiallyCompleteBadge do
     use Surface.Catalogue.Example,
-      subject: SurfacePolaris.Badge,
-      catalogue: SurfacePolaris.Catalogue,
+      subject: Polaris.Badge,
+      catalogue: Polaris.Catalogue,
       title: "Partially complete badge",
       height: "70px",
       container: {:div, class: "temporary-workaround"}

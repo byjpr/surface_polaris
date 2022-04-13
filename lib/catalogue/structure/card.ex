@@ -1,10 +1,10 @@
-defmodule SurfacePolaris.Catalogue.Card do
+defmodule Polaris.Catalogue.Card do
   @moduledoc """
   """
   defmodule BasicCard do
     use Surface.Catalogue.Example,
-      subject: SurfacePolaris.Card,
-      catalogue: SurfacePolaris.Catalogue,
+      subject: Polaris.Card,
+      catalogue: Polaris.Catalogue,
       title: "Default card",
       height: "130px",
       container: {:div, class: "temporary-workaround"}
@@ -20,8 +20,8 @@ defmodule SurfacePolaris.Catalogue.Card do
 
   defmodule CardSectioned do
     use Surface.Catalogue.Example,
-      subject: SurfacePolaris.Card,
-      catalogue: SurfacePolaris.Catalogue,
+      subject: Polaris.Card,
+      catalogue: Polaris.Catalogue,
       title: "Card with multiple sections",
       height: "200px",
       container: {:div, class: "temporary-workaround"}
@@ -45,8 +45,8 @@ defmodule SurfacePolaris.Catalogue.Card do
 
   defmodule CardTitleSectioned do
     use Surface.Catalogue.Example,
-      subject: SurfacePolaris.Card,
-      catalogue: SurfacePolaris.Catalogue,
+      subject: Polaris.Card,
+      catalogue: Polaris.Catalogue,
       title: "Card with multiple titled sections",
       height: "250px",
       container: {:div, class: "temporary-workaround"}
@@ -71,8 +71,8 @@ defmodule SurfacePolaris.Catalogue.Card do
 
   defmodule CardSubsection do
     use Surface.Catalogue.Example,
-      subject: SurfacePolaris.Card,
-      catalogue: SurfacePolaris.Catalogue,
+      subject: Polaris.Card,
+      catalogue: Polaris.Catalogue,
       title: "Card with subsection",
       height: "450px",
       container: {:div, class: "temporary-workaround"}

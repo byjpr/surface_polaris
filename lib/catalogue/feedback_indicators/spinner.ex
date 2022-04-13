@@ -1,11 +1,11 @@
-defmodule SurfacePolaris.Catalogue.Spinner do
+defmodule Polaris.Catalogue.Spinner do
   @moduledoc """
   The classic **button**, in different colors, sizes, and states
   """
   defmodule BasicSpinner do
     use Surface.Catalogue.Example,
-      subject: SurfacePolaris.Spinner,
-      catalogue: SurfacePolaris.Catalogue,
+      subject: Polaris.Spinner,
+      catalogue: Polaris.Catalogue,
       title: "Basic spinner",
       height: "90px",
       container: {:div, class: "temporary-workaround"}
@@ -19,8 +19,8 @@ defmodule SurfacePolaris.Catalogue.Spinner do
 
   defmodule SmallSpinner do
     use Surface.Catalogue.Example,
-      subject: SurfacePolaris.Spinner,
-      catalogue: SurfacePolaris.Catalogue,
+      subject: Polaris.Spinner,
+      catalogue: Polaris.Catalogue,
       title: "Small spinner",
       height: "90px",
       container: {:div, class: "temporary-workaround"}
@@ -34,8 +34,8 @@ defmodule SurfacePolaris.Catalogue.Spinner do
 
   defmodule LargeSpinner do
     use Surface.Catalogue.Example,
-      subject: SurfacePolaris.Spinner,
-      catalogue: SurfacePolaris.Catalogue,
+      subject: Polaris.Spinner,
+      catalogue: Polaris.Catalogue,
       title: "Large spinner",
       height: "90px",
       container: {:div, class: "temporary-workaround"}

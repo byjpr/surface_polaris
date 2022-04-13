@@ -1,10 +1,10 @@
-defmodule SurfacePolaris.Catalogue.Link do
+defmodule Polaris.Catalogue.Link do
   @moduledoc """
   """
   defmodule BasicButton do
     use Surface.Catalogue.Example,
-      subject: SurfacePolaris.Link,
-      catalogue: SurfacePolaris.Catalogue,
+      subject: Polaris.Link,
+      catalogue: Polaris.Catalogue,
       title: "Label",
       height: "70px",
       container: {:div, class: "temporary-workaround"}
@@ -18,8 +18,8 @@ defmodule SurfacePolaris.Catalogue.Link do
 
   defmodule OutlineButton do
     use Surface.Catalogue.Example,
-      subject: SurfacePolaris.Link,
-      catalogue: SurfacePolaris.Catalogue,
+      subject: Polaris.Link,
+      catalogue: Polaris.Catalogue,
       title: "Label",
       height: "70px",
       container: {:div, class: "temporary-workaround"}

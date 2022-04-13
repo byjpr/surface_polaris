@@ -1,9 +1,9 @@
-defmodule SurfacePolaris.Catalogue.DisplayText do
+defmodule Polaris.Catalogue.DisplayText do
   @moduledoc """
   """
   use Surface.Catalogue.Example,
-    subject: SurfacePolaris.DisplayText,
-    catalogue: SurfacePolaris.Catalogue,
+    subject: Polaris.DisplayText,
+    catalogue: Polaris.Catalogue,
     title: "Extra large",
     height: "90px",
     container: {:div, class: "temporary-workaround"}

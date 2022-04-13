@@ -1,11 +1,11 @@
-defmodule SurfacePolaris.Catalogue.TextField do
+defmodule Polaris.Catalogue.TextField do
   @moduledoc """
   """
 
   defmodule Default do
     use Surface.Catalogue.Example,
-      subject: SurfacePolaris.TextField,
-      catalogue: SurfacePolaris.Catalogue,
+      subject: Polaris.TextField,
+      catalogue: Polaris.Catalogue,
       title: "Default behavior",
       height: "140px",
       container: {:div, class: "temporary-workaround"},
@@ -20,8 +20,8 @@ defmodule SurfacePolaris.Catalogue.TextField do
 
   defmodule HideLabel do
     use Surface.Catalogue.Example,
-      subject: SurfacePolaris.TextField,
-      catalogue: SurfacePolaris.Catalogue,
+      subject: Polaris.TextField,
+      catalogue: Polaris.Catalogue,
       title: "Hidden Label",
       height: "140px",
       container: {:div, class: "temporary-workaround"},
@@ -36,8 +36,8 @@ defmodule SurfacePolaris.Catalogue.TextField do
 
   defmodule Disabled do
     use Surface.Catalogue.Example,
-      subject: SurfacePolaris.TextField,
-      catalogue: SurfacePolaris.Catalogue,
+      subject: Polaris.TextField,
+      catalogue: Polaris.Catalogue,
       title: "Disabled",
       height: "140px",
       container: {:div, class: "temporary-workaround"},
@@ -52,14 +52,14 @@ defmodule SurfacePolaris.Catalogue.TextField do
 
   defmodule WithError do
     use Surface.Catalogue.Example,
-      subject: SurfacePolaris.TextField,
-      catalogue: SurfacePolaris.Catalogue,
+      subject: Polaris.TextField,
+      catalogue: Polaris.Catalogue,
       title: "With Error",
       height: "140px",
       container: {:div, class: "temporary-workaround"},
       direction: "vertical"
 
-    alias SurfacePolaris.InlineError
+    alias Polaris.InlineError
 
     def render(assigns) do
       ~F"""
