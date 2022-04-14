@@ -11,7 +11,7 @@ defmodule Polaris.Catalogue.FormLayout do
       container: {:div, class: "temporary-workaround"},
       direction: "vertical"
 
-    alias Polaris.{Structure, Form}
+    alias Polaris.{TextField, Select}
 
     @moduledoc """
     Use to stack form fields vertically, which makes them easier to scan and complete.
@@ -21,13 +21,13 @@ defmodule Polaris.Catalogue.FormLayout do
       ~F"""
       <FormLayout>
         <FormLayout.Item>
-          <Form.TextField
+          <TextField
             label="Product weight"
             type="number"
           />
         </FormLayout.Item>
         <FormLayout.Item>
-          <Form.Select
+          <Select
             label="Unit of measure"
             placeholder="Select"
           />
@@ -46,7 +46,7 @@ defmodule Polaris.Catalogue.FormLayout do
       container: {:div, class: "temporary-workaround"},
       direction: "vertical"
 
-    alias Polaris.{Structure, Form}
+    alias Polaris.{TextField, Select}
 
     @moduledoc """
     For very short inputs, the width of the inputs may be reduced in order to fit more fields in the row.
@@ -57,16 +57,16 @@ defmodule Polaris.Catalogue.FormLayout do
       <FormLayout>
         <FormLayout.Group condensed>
           <FormLayout.Item>
-            <Form.TextField label="Length" />
+            <TextField label="Length" />
           </FormLayout.Item>
           <FormLayout.Item>
-            <Form.TextField label="Width" />
+            <TextField label="Width" />
           </FormLayout.Item>
           <FormLayout.Item>
-            <Form.TextField label="Height" />
+            <TextField label="Height" />
           </FormLayout.Item>
           <FormLayout.Item>
-            <Form.TextField label="Unit" />
+            <TextField label="Unit" />
           </FormLayout.Item>
         </FormLayout.Group>
       </FormLayout>
@@ -83,7 +83,7 @@ defmodule Polaris.Catalogue.FormLayout do
       container: {:div, class: "temporary-workaround"},
       direction: "vertical"
 
-    alias Polaris.{Structure, Form}
+    alias Polaris.{TextField, Select}
 
     @moduledoc """
     """
@@ -93,16 +93,16 @@ defmodule Polaris.Catalogue.FormLayout do
       <FormLayout>
         <FormLayout.Group>
           <FormLayout.Item>
-            <Form.TextField label="Length" />
+            <TextField label="Length" />
           </FormLayout.Item>
           <FormLayout.Item>
-            <Form.TextField label="Width" />
+            <TextField label="Width" />
           </FormLayout.Item>
           <FormLayout.Item>
-            <Form.TextField label="Height" />
+            <TextField label="Height" />
           </FormLayout.Item>
           <FormLayout.Item>
-            <Form.TextField label="Unit" />
+            <TextField label="Unit" />
           </FormLayout.Item>
         </FormLayout.Group>
       </FormLayout>
