@@ -8,6 +8,9 @@ defmodule Polaris.Card do
   @doc "Title content for the card"
   prop(title, :string)
 
+  @doc "Card header actions"
+  prop(actions, :any)
+
   prop(sectioned, :boolean)
   prop(subdued, :boolean)
 
@@ -16,7 +19,7 @@ defmodule Polaris.Card do
   def render(assigns) do
     ~F"""
     <div class="Polaris-Card">
-      <Polaris.Card.Header :if={@title} title={@title} />
+      <Polaris.Card.Header :if={@title} title={@title} actions={@actions} />
 
       <!-- Default slot -->
       <Polaris.Card.Section :if={@sectioned}>

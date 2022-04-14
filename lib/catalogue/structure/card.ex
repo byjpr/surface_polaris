@@ -108,4 +108,66 @@ defmodule Polaris.Catalogue.Card do
       """
     end
   end
+
+  defmodule MultipleActions do
+    use Surface.Catalogue.Example,
+      subject: Polaris.Card,
+      catalogue: Polaris.Catalogue,
+      title: "Multiple actions",
+      height: "450px",
+      container: {:div, class: "temporary-workaround"}
+
+    def render(assigns) do
+      ~F"""
+      <Polaris.Card title="Tags" actions={[%{content: "Add variant", asfd: "asfdasf"}, %{content: "Add variant", asfd: "asfdasf"}]} sectioned>
+        <Polaris.TextField label="Add tags" label_hidden />
+        <Polaris.Stack spacing="tight">
+          <Polaris.Stack.Item>
+            <Polaris.Tag>Rustic</Polaris.Tag>
+          </Polaris.Stack.Item>
+          <Polaris.Stack.Item>
+            <Polaris.Tag>Antique</Polaris.Tag>
+          </Polaris.Stack.Item>
+          <Polaris.Stack.Item>
+            <Polaris.Tag>Vinyl</Polaris.Tag>
+          </Polaris.Stack.Item>
+          <Polaris.Stack.Item>
+            <Polaris.Tag>Refurbished</Polaris.Tag>
+          </Polaris.Stack.Item>
+        </Polaris.Stack>
+      </Polaris.Card>
+      """
+    end
+  end
+
+  defmodule SingleActions do
+    use Surface.Catalogue.Example,
+      subject: Polaris.Card,
+      catalogue: Polaris.Catalogue,
+      title: "Single action",
+      height: "450px",
+      container: {:div, class: "temporary-workaround"}
+
+    def render(assigns) do
+      ~F"""
+      <Polaris.Card title="Tags" actions={%{content: "Add variant", asfd: "asfdasf"}} sectioned>
+        <Polaris.TextField label="Add tags" label_hidden />
+        <Polaris.Stack spacing="tight">
+          <Polaris.Stack.Item>
+            <Polaris.Tag>Rustic</Polaris.Tag>
+          </Polaris.Stack.Item>
+          <Polaris.Stack.Item>
+            <Polaris.Tag>Antique</Polaris.Tag>
+          </Polaris.Stack.Item>
+          <Polaris.Stack.Item>
+            <Polaris.Tag>Vinyl</Polaris.Tag>
+          </Polaris.Stack.Item>
+          <Polaris.Stack.Item>
+            <Polaris.Tag>Refurbished</Polaris.Tag>
+          </Polaris.Stack.Item>
+        </Polaris.Stack>
+      </Polaris.Card>
+      """
+    end
+  end
 end
