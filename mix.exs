@@ -69,7 +69,7 @@ defmodule Polaris.MixProject do
       {:ecto, "~> 3.4.2", only: [:test, :dev]},
       {:exsync, "~> 0.2", only: :dev},
       {:surface_formatter, "~> 0.7.5", only: :dev},
-      {:polaris_icon, path: "../polaris_icon"},
+      {:polaris_icon, git: "https://github.com/byjpr/polaris_icon.git"},
       {:recase, "~> 0.5"}
     ]
   end
