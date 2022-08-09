@@ -60,7 +60,6 @@ defmodule Polaris.MixProject do
       {:ex_doc, ">= 0.0.0", only: :dev, runtime: false},
       {:floki, "~> 0.25.0", only: :test},
       {:jason, "~> 1.0"},
-      {:surface_catalogue, "~> 0.2.0", only: [:dev, :test]},
       {:surface_font_awesome, "~> 0.2.0"},
       {:credo, "~> 1.5.6", only: :dev},
       {:surface, "~> 0.7.0"},
