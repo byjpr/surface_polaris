@@ -68,7 +68,7 @@ defmodule Polaris.MixProject do
       {:phoenix_ecto, "~> 4.0", only: [:test, :dev]},
       {:ecto, "~> 3.4.2", only: [:test, :dev]},
       {:exsync, "~> 0.2", only: :dev},
-      {:surface_formatter, "~> 0.7.5", only: :dev},
+      {:surface_formatter, "~> 0.7.5", only: :dev, runtime: false},
       {:polaris_icon, git: "https://github.com/byjpr/polaris_icon.git"},
       {:recase, "~> 0.5"}
     ]
